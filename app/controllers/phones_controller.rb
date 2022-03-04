@@ -7,38 +7,6 @@ class PhonesController < ApplicationController
     @phones = Phone.order('id ASC').all
   end
 
-  def title
-    @phone = Phone.find(params[:id])
-
-    respond_to do |format|
-      format.js { render partial: 'phone_title_show', phone: @phone }
-    end
-  end
-
-  def image
-    @phone = Phone.find(params[:id])
-
-    respond_to do |format|
-      format.js { render partial: 'phone_image_show', phone: @phone }
-    end
-  end
-
-  def video
-    @phone = Phone.find(params[:id])
-
-    respond_to do |format|
-      format.js { render partial: 'phone_video_show', phone: @phone }
-    end
-  end
-
-  def overview
-    @phone = Phone.find(params[:id])
-
-    respond_to do |format|
-      format.js { render partial: 'phone_overview_show', phone: @phone }
-    end
-  end
-
   def show; end
   def edit; end
 

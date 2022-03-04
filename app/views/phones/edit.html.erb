@@ -4,28 +4,33 @@
 <div class="row">
 
   <div class="col-2">
-    <%= render 'phone_show_nav' %>
+    <%= render 'phones/edit_phone_partials/edit_phone_show_nav' %>
   </div>
 
   <div class="col-6 m-5">
-    <div class="row p-5 shadow bg-white mb-5">
-      <h1 class="display-6">
-        Editing
-        <span class="anchorjs-link text-muted" id='gadget'>
-          <%= @phone.model_title %>
-        </span>
-      </h1>
-    </div>
 
-    <%= render 'form', phone: @phone %>
+    <div class="contents-block">
 
-    <div class="list-inline-item mt-3">
-      <%= link_to 'Show', @phone, class: 'text-decoration-none me-3' %>
-      <%= link_to 'Back', phones_path, class: 'text-decoration-none' %>
+      <div class="row px-0 pt-4 pb-4 shadow bg-white mb-5 text-center header-nav">
+        <div>
+          <h1 class="display-6">
+            Editing
+
+            <span class="anchorjs-link text-muted" id='gadget'>
+              <%= @phone.model_title %>
+            </span>
+            <br>
+
+            <i class="fas fa-edit text-muted pt-4"></i>
+          </h1>
+        </div>
+      </div>
+
+      <%= render 'phones/edit_phone_partials/edit_phone_form', phone: @phone %>
     </div>
   </div>
 
   <div class="col-3">
-    <%= render 'phone_info_card' %>
+    <%= render 'phones/edit_phone_partials/edit_phone_info_card' %>
   </div>
 </div>
