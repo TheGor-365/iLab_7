@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_07_162944) do
-
+ActiveRecord::Schema[7.0].define(version: 2022_01_07_162944) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -19,9 +18,9 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "name", null: false
     t.text "body"
     t.string "record_type", null: false
-    t.bigint "record_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.integer "record_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["record_type", "record_id", "name"], name: "index_action_text_rich_texts_uniqueness", unique: true
   end
 
@@ -30,7 +29,7 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "record_type", null: false
     t.bigint "record_id", null: false
     t.bigint "blob_id", null: false
-    t.datetime "created_at", null: false
+    t.datetime "created_at", precision: nil, null: false
     t.index ["blob_id"], name: "index_active_storage_attachments_on_blob_id"
     t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
   end
@@ -43,7 +42,7 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "service_name", null: false
     t.bigint "byte_size", null: false
     t.string "checksum", null: false
-    t.datetime "created_at", null: false
+    t.datetime "created_at", precision: nil, null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
@@ -59,14 +58,14 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "model"
     t.string "version"
     t.string "series"
-    t.datetime "production_period"
+    t.datetime "production_period", precision: nil
     t.string "full_title"
     t.text "overview"
     t.string "avatar"
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "airpods_users", id: false, force: :cascade do |t|
@@ -84,8 +83,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar", default: ""
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["quiz_question_id"], name: "index_answers_on_quiz_question_id"
     t.index ["user_id"], name: "index_answers_on_user_id"
   end
@@ -96,14 +95,14 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "model"
     t.string "version"
     t.string "series"
-    t.datetime "production_period"
+    t.datetime "production_period", precision: nil
     t.string "full_title"
     t.text "overview"
     t.string "avatar"
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "apple_watches_users", id: false, force: :cascade do |t|
@@ -119,8 +118,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar", default: ""
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_articles_on_user_id"
   end
 
@@ -131,8 +130,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar", default: ""
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "chapters", force: :cascade do |t|
@@ -141,8 +140,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar", default: ""
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["cource_id"], name: "index_chapters_on_cource_id"
   end
 
@@ -159,8 +158,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar", default: ""
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["category_id"], name: "index_cources_on_category_id"
     t.index ["generation_id"], name: "index_cources_on_generation_id"
     t.index ["model_id"], name: "index_cources_on_model_id"
@@ -178,8 +177,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "modules", default: [], array: true
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "defects_mods", id: false, force: :cascade do |t|
@@ -211,8 +210,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar"
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "imacs", force: :cascade do |t|
@@ -221,14 +220,14 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "model"
     t.string "version"
     t.string "series"
-    t.datetime "production_period"
+    t.datetime "production_period", precision: nil
     t.string "full_title"
     t.text "overview"
     t.string "avatar"
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "imacs_users", id: false, force: :cascade do |t|
@@ -244,14 +243,14 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "model"
     t.string "version"
     t.string "series"
-    t.datetime "production_period"
+    t.datetime "production_period", precision: nil
     t.string "full_title"
     t.text "overview"
     t.string "avatar"
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "ipads_users", id: false, force: :cascade do |t|
@@ -267,14 +266,14 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "model"
     t.string "version"
     t.string "series"
-    t.datetime "production_period"
+    t.datetime "production_period", precision: nil
     t.string "full_title"
     t.text "overview"
     t.string "avatar"
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "makbooks_users", id: false, force: :cascade do |t|
@@ -291,8 +290,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar"
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "mods", force: :cascade do |t|
@@ -306,8 +305,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "manufacturers", default: [], array: true
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "mods_repairs", id: false, force: :cascade do |t|
@@ -323,8 +322,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.integer "quantity"
     t.decimal "total"
     t.decimal "unit_price"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["order_id"], name: "index_order_items_on_order_id"
     t.index ["product_id"], name: "index_order_items_on_product_id"
   end
@@ -332,8 +331,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
   create_table "orders", force: :cascade do |t|
     t.decimal "subtotal"
     t.decimal "total"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "owned_gadgets", force: :cascade do |t|
@@ -341,8 +340,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar"
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_owned_gadgets_on_user_id"
   end
 
@@ -359,8 +358,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar"
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.bigint "generation_id", null: false
     t.index ["generation_id"], name: "index_phones_on_generation_id"
   end
@@ -386,8 +385,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar", default: ""
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
@@ -399,8 +398,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar", default: ""
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.bigint "category_id"
     t.index ["category_id"], name: "index_products_on_category_id"
   end
@@ -411,8 +410,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar", default: ""
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["quiz_id"], name: "index_quiz_questions_on_quiz_id"
   end
 
@@ -424,8 +423,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar", default: ""
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.integer "passing_score", default: 70
     t.integer "num_questions_to_show", default: 10
     t.index ["chapter_id"], name: "index_quizzes_on_chapter_id"
@@ -445,8 +444,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
     t.string "price"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "spare_parts", force: :cascade do |t|
@@ -458,8 +457,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar"
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "universities", force: :cascade do |t|
@@ -467,8 +466,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "avatar", default: ""
     t.string "images", default: [], array: true
     t.string "videos", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -476,19 +475,19 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.string "username", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
+    t.datetime "reset_password_sent_at", precision: nil
+    t.datetime "remember_created_at", precision: nil
     t.integer "sign_in_count", default: 0, null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
+    t.datetime "current_sign_in_at", precision: nil
+    t.datetime "last_sign_in_at", precision: nil
     t.string "current_sign_in_ip"
     t.string "last_sign_in_ip"
     t.string "confirmation_token"
-    t.datetime "confirmed_at"
-    t.datetime "confirmation_sent_at"
+    t.datetime "confirmed_at", precision: nil
+    t.datetime "confirmation_sent_at", precision: nil
     t.string "unconfirmed_email"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string "avatar"
     t.boolean "admin", default: false
     t.boolean "author", default: true
@@ -498,8 +497,8 @@ ActiveRecord::Schema.define(version: 2022_01_07_162944) do
     t.boolean "customer", default: true
     t.string "first_name"
     t.string "last_name"
-    t.datetime "borned"
-    t.datetime "birthday"
+    t.datetime "borned", precision: nil
+    t.datetime "birthday", precision: nil
     t.text "images", default: [], array: true
     t.text "videos", default: [], array: true
     t.index ["email"], name: "index_users_on_email", unique: true
