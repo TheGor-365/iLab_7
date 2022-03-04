@@ -1,0 +1,15 @@
+<div class="fixed-right nav-scroll shadow bg-white col-3 mx-3 mt-5">
+
+  <div class="show-nav-header shadow bg-white py-4">
+    <h4>
+      <div id='phone-title' class="text-center">
+        <%= @phone.nil? ? (render partial: 'more_info') : (render partial: 'phone_title_show', phone: @phone) %>
+      </div>
+    </h4>
+  </div>
+  <br>
+
+  <div id="phone-content" class="text-center text-muted">
+    <%= render partial: 'phones_default_content' if @phone.nil? %>
+  </div>
+</div>

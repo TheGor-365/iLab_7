@@ -1,0 +1,125 @@
+<% provide :page_title, 'Store' %>
+<% currently_at 'Store' %>
+
+<div class="row">
+
+  <div class="col-2">
+    <%= render 'store_show_nav' %>
+  </div>
+
+  <div class="col-6 m-5">
+
+    <div class="row shadow bg-white mb-5">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">iLab <span class="text-muted"><strong>Store</strong></span></h1>
+          <small class="text-muted">
+            Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.
+          </small>
+        </div>
+      </div>
+    </div>
+
+    <div class="album bg-light">
+
+      <div class="row">
+        <% @categories.each do |category| %>
+          <% @products.each do |product| %>
+            <% if product.category == category %>
+              <div class="col-6">
+                <div class="anchorjs-link bg-white p-5 shadow product-card m-3">
+
+                  <%= link_to product.avatar.url remote: true do %>
+                    <%= product_avatar(product, 335, 230) %>
+                  <% end %>
+
+                  <div class="card-text">
+                    <div class="mt-2 mb-3">
+                      <small class="float-start text-muted">
+                        Model
+                      </small>
+                      <h6 class="text-muted float-end">
+                        <strong>
+                          <%= product.name %>
+                        </strong>
+                      </h6>
+                    </div>
+                  </div>
+                  <br>
+
+                  <div class="mt-2 mb-3">
+                    <small class="float-start text-muted">
+                      Price
+                    </small>
+                    <h6 class="float-end text-muted">
+                      <strong>
+                        $<%= product.price %>
+                      </strong>
+                    </h6>
+                  </div>
+
+                  <div class="card-body">
+                    <div class="accordion accordion-flush" id="<%= product.id %>-description">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-<%= product.id %>"
+                            aria-expanded="false"
+                            aria-controls="flush-<%= product.id %>">
+
+                            <small class="text-muted">
+                              Show <%= product.name %> description
+                            </small>
+                          </button>
+                        </h2>
+
+                        <div
+                          id="flush-<%= product.id %>"
+                          class="accordion-collapse collapse  border rounded"
+                          aria-labelledby="flush-headingOne"
+                          data-bs-parent="#<%= product.id %>-description">
+
+                          <div class="accordion-body">
+                            <small class="text-muted">
+                              <%= product.description %>
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                      <%= form_with model: @order_item do |f| %>
+
+                        <%= f.hidden_field :product_id, value: product.id %>
+                        <div class="input-group input-group-sm">
+                          <small class="me-3 pt-1 text-muted">
+                            Count
+                          </small>
+                          <%= f.number_field :quantity, value: 1, min: 1, class: 'form-control ps-5 me-2', id: 'product-count-field' %>
+                          <div class="btn-group">
+                            <%= f.submit "Add", class: "btn btn-sm btn-outline-primary" %>
+                            <%= button_to "Buy", product, class: "btn btn-sm btn-outline-success" %>
+                            <%= button_to "Details", product_path(product), method: :get, class: "btn btn-sm btn-outline-secondary" %>
+                          </div>
+                        </div>
+                      <% end %>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div id="current_product" class="col-3">
+    <%= render partial: 'store_info_card' %>
+  </div>
+</div>

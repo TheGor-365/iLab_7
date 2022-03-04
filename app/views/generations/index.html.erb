@@ -1,0 +1,57 @@
+<% provide :page_title, 'iPhone Generations' %>
+<% currently_at 'iPhone Generations' %>
+
+<div class="container pt-5 pb-5">
+
+  <div class="bg-white shadow p-4 col-12">
+
+    <h4 class="display-3 mb-5">Generations</h4>
+
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Title</th>
+          <th>Production period</th>
+          <th>Features</th>
+          <th>Vulnerability</th>
+          <th>Images</th>
+          <th>Videos</th>
+          <th colspan="3">Controls</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @generations.each do |generation| %>
+          <tr>
+            <td class="align-middle"><%= generation.id %></td>
+            <td class="align-middle"><%= generation.title %></td>
+            <td class="align-middle"><%= generation.production_period %></td>
+            <td class="align-middle"><%= generation.features %></td>
+            <td class="align-middle"><%= generation.vulnerability %></td>
+
+            <td class="align-middle">
+              <% generation.images.each do |image| %>
+                <%= image_tag(image.url, width: '30', class: 'rounded') %>
+              <% end %>
+            </td>
+
+            <td class="align-middle">
+              <% generation.videos.each do |video| %>
+                <%= video_tag(video.url, width: '40', height: '40', controls: true, class: 'rounded') %>
+              <% end %>
+            </td>
+
+            <td class="align-middle"><%= link_to 'Show', generation, class: 'text-decoration-none' %></td>
+            <td class="align-middle"><%= link_to 'Edit', edit_generation_path(generation), class: 'text-decoration-none' %></td>
+            <td class="align-middle"><%= link_to 'Destroy', generation, method: :delete, data: { confirm: 'Are you sure?' }, class: 'text-decoration-none' %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'New Generation', new_generation_path, class: 'text-decoration-none' %>
+  </div>
+</div>

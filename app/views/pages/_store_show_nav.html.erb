@@ -1,0 +1,25 @@
+<div class="fixed-left nav-scroll shadow bg-white p-4 col-2 m-3 mt-5">
+
+  <h5>
+    <span class="text-muted">Store</span> navigation
+  </h5>
+  <br>
+
+  <% @categories.each do |category| %>
+
+    <%= category.heading %>
+
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link text-muted" href="#product">
+          <% if category.products.length > 0 %>
+            <% category.products.each do |product| %>
+              <%= product.name %> <br>
+            <% end %>
+          <% end %>
+        </a>
+      </li>
+    </ul>
+
+  <% end %>
+</div>

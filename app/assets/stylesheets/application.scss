@@ -1,0 +1,213 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ // @import "./actiontext.scss";
+
+ @import "./at.scss";
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+input[type=text] {
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+input[type=email] {
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+input[type=password] {
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+input[type=password-confirmation] {
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+select {
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+
+textarea {
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+
+#image-preview[src="#"] {
+  display: none;
+}
+
+.fixed-left {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.fixed-right {
+  position: fixed;
+  right: 40px;
+  z-index: 10;
+}
+
+.fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background: white !important;
+  opacity: 0.9;
+  z-index: 1030;
+}
+
+ul .dropdown-menu {
+  z-index: 1030;
+}
+
+.dropdown-menu {
+  border: none !important;
+}
+
+.row {
+  --bs-gutter-x: 0 !important;
+}
+
+button.accordion-button.collapsed {
+  padding-left: 0px !important;
+}
+
+button.accordion-button {
+  padding-left: 0px !important;
+}
+
+#product-count-field {
+  background-color: #f8f9fa;
+  cursor: pointer;
+  max-width: 120px;
+}
+
+.nav-scroll {
+  max-height: 800px;
+  min-height: 800px;
+  overflow-y: auto;
+}
+
+.contents {
+  width: 100%;
+  max-height: 800px;
+  overflow: auto;
+  top: 80px;
+}
+
+.table {
+  position: relative;
+}
+
+th {
+  position: sticky;
+  top: 80px;
+  background-color: #ffffff !important;
+  z-index: 1;
+  height: 50px;
+  opacity: 0.95;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  box-shadow: 1px 5px 5px grey !important;
+}
+
+.btn-group-vertical.controls {
+  position: sticky;
+  top: 170px;
+  padding-top: 30px !important;
+  padding-bottom: 100px !important;
+}
+
+.title .h5 {
+  position: sticky;
+  top: 180px;
+  padding-top: 20px !important;
+  padding-bottom: 100px !important;
+}
+
+.images {
+  position: sticky;
+  top: 170px;
+  padding-top: 50px !important;
+  padding-bottom: 100px !important;
+}
+
+td.py-5.text-center {
+  padding-top: 80px !important;
+}
+
+td.py-5.text-center.title {
+  padding-top: 70px !important;
+}
+
+.videos {
+  position: sticky;
+  top: 170px;
+  padding-top: 50px !important;
+  padding-bottom: 100px !important;
+}
+
+.header-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+.show-nav-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+td.py-5.overview {
+  padding-top: 75px !important;
+  padding-bottom: 100px !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

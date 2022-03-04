@@ -1,0 +1,103 @@
+<% provide :nav do %>
+
+  <header class="mb-5">
+    <div class="navbar navbar-expand-lg fixed-top border-bottom shadow-sm">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+        <h3 class="d-flex align-items-center shadow-sm bg-light px-3 py-2 mb-2 mb-lg-0 mx-5">
+          <%= link_to 'iLab', root_path, class: 'bi me-2 text-muted text-decoration-none' %>
+        </h3>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+
+          <li>
+            <small>
+              <strong>
+                <%=      nav_tab 'Store',              store_path,        class: "nav-link px-2 link-dark me-5 text-success", current_page: current_page %>
+              </strong>
+            </small>
+          </li>
+
+          <li><small><%= nav_tab 'iPhones',            phones_path,       class: "nav-link px-2 link-dark",                 current_page: current_page %></small></li>
+
+          <li><small><%= nav_tab 'iPhone Generations', generations_path,  class: "nav-link px-2 link-dark",                 current_page: current_page %></small></li>
+          <li><small><%= nav_tab 'iPhone Models',      models_path,       class: "nav-link px-2 link-dark",                 current_page: current_page %></small></li>
+          <li><small><%= nav_tab 'iPhone Modules',     mods_path,         class: "nav-link px-2 link-dark",                 current_page: current_page %></small></li>
+          <li><small><%= nav_tab 'iPhone Spare Parts', spare_parts_path,  class: "nav-link px-2 link-dark",                 current_page: current_page %></small></li>
+
+          <li><small><%= nav_tab 'iPhone Defects',     defects_path,      class: "nav-link px-2 link-dark",                 current_page: current_page %></small></li>
+          <li><small><%= nav_tab 'iPhone Repairs',     repairs_path,      class: "nav-link px-2 link-dark",                 current_page: current_page %></small></li>
+
+          <li><small><%= nav_tab 'Home',               root_path,         class: "nav-link px-2 link-dark ms-5 text-muted", current_page: current_page %></small></li>
+          <li><small><%= nav_tab 'Terms',              terms_path,        class: "nav-link px-2 link-dark text-muted",      current_page: current_page %></small></li>
+          <li><small><%= nav_tab 'Contacts',           contacts_path,     class: "nav-link px-2 link-dark text-muted me-5", current_page: current_page %></small></li>
+        </ul>
+
+        <% if user_signed_in? %>
+
+          <div class="fixed-right badge bg-light me-3 shadow-sm p-2">
+            <% if current_order.order_items.size > 0 %>
+              <%= link_to cart_path, class: 'text-dark align-middle text-decoration-none' do %>
+                <%= "#{current_user.username}'s cart" %> <span class="badge bg-danger align-middle"><%= @order_items.count if @order_items.present? %></span>
+              <% end %>
+            <% else %>
+              <%= link_to cart_path, class: 'text-muted align-middle text-decoration-none' do %>
+                <span class="align-middle"><%= "#{current_user.username}'s cart" %></span> <span class="badge bg-info text-dark align-middle">empty</span>
+              <% end %>
+            <% end %>
+          </div>
+
+          <div class="dropdown text-end shadow-sm px-2 py-1 bg-light">
+            <a
+              href="#"
+              class="d-block link-dark text-decoration-none dropdown-toggle text-muted"
+              id="dropdownUser1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+
+              <%= user_avatar(current_user, 40) %>
+            </a>
+
+            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser1" style="">
+
+              <li><%= nav_tab 'Profile',       account_path(current_user.username), class: "dropdown-item px-5", current_page: current_page %></li>
+              <li><%= nav_tab 'Store',         store_path,                          class: "dropdown-item px-5", current_page: current_page %></li>
+
+              <li><%= nav_tab 'Owned Gadgets', owned_gadgets_path,                  class: "dropdown-item px-5", current_page: current_page %></li>
+              <li><%= nav_tab 'MacBooks',      makbooks_path,                       class: "dropdown-item px-5", current_page: current_page %></li>
+              <li><%= nav_tab 'iMacs',         imacs_path,                          class: "dropdown-item px-5", current_page: current_page %></li>
+              <li><%= nav_tab 'iPads',         ipads_path,                          class: "dropdown-item px-5", current_page: current_page %></li>
+              <li><%= nav_tab 'AirPods',       airpods_path,                        class: "dropdown-item px-5", current_page: current_page %></li>
+              <li><%= nav_tab 'Apple Watches', apple_watches_path,                  class: "dropdown-item px-5", current_page: current_page %></li>
+              <li><%= nav_tab 'Posts',         posts_path,                          class: 'dropdown-item px-5', current_page: current_page %></li>
+              <li><%= nav_tab 'Articles',      articles_path,                       class: 'dropdown-item px-5', current_page: current_page %></li>
+              <li><%= nav_tab 'New Post',      new_post_path,                       class: 'dropdown-item px-5', current_page: current_page %></li>
+              <li><%= nav_tab 'New Article',   new_article_path,                    class: 'dropdown-item px-5', current_page: current_page %></li>
+
+              <% @universities.each do |university| %>
+                <li>
+                  <%= nav_tab university.title, university_path(university),        class: 'dropdown-item px-5', current_page: current_page %>
+                </li>
+              <% end %>
+
+              <li><%= nav_tab 'Settings',      edit_user_registration_path,         class: "dropdown-item px-5", current_page: current_page %></li>
+
+              <li><hr class="dropdown-divider"></li>
+
+              <li>
+                <%= nav_tab 'Sign out', destroy_user_session_path, method: :delete, class: "dropdown-item text-danger p-5", current_page: current_page %>
+              </li>
+            </ul>
+          <% else %>
+
+            <ul class="nav">
+              <li class="nav-item"><%= link_to 'Sign In', new_user_session_path,      class: "nav-link link-dark px-2" %></li>
+              <li class="nav-item"><%= link_to 'Sign Up', new_user_registration_path, class: "nav-link link-dark px-2" %></li>
+            </ul>
+          <% end %>
+
+        </div>
+      </div>
+    </div>
+  </header>
+<% end %>

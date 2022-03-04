@@ -1,0 +1,30 @@
+<div class="fixed-left nav-scroll shadow bg-white col-2 mx-3 mt-5">
+
+  <div class="show-nav-header shadow bg-white py-4 text-center">
+    <h4>
+      <span class="text-muted display-6">
+        Models
+      </span><br>
+      <i class="fas fa-2x fa-route text-muted pt-4"></i>
+    </h4>
+  </div>
+  <br>
+
+  <div class="ps-4">
+    <% @phones.each do |phone| %>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <% if @phones.length > 0 %>
+            <small>
+              <!-- <a class="nav-link py-1 text-muted" href="#<%= phone.model_title.to_s %>"> -->
+                <%= link_to phones_path(phone, anchor: phone.model_title.to_s), class: 'nav-link py-1 text-muted' do %>
+                  <%= phone.model_title %>
+                <% end %>
+              <!-- </a> -->
+            </small>
+          <% end %>
+        </li>
+      </ul>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="fixed-right shadow bg-white p-4 pe-3 col-3 m-3 mt-5">
+
+  <h5 class="text-center">
+    <span class="text-muted">
+      <%= @product.name if @product.present? %>
+    </span>
+  </h5>
+  <br>
+
+  <div id="current_product">
+
+  </div>
+
+  <%# if @product.present? %>
+    <%#= image_tag(@product.avatar.url, width: '420') if @product.avatar.present? %>
+  <%# end %>
+</div>
