@@ -20,14 +20,15 @@ User.create([
 
 
 Generation.create([
+  { title: '1',  production_period: '', features: '', vulnerability: '', images: [], videos: [] },
+  { title: '2',  production_period: '', features: '', vulnerability: '', images: [], videos: [] },
+  { title: '3',  production_period: '', features: '', vulnerability: '', images: [], videos: [] },
   { title: '4',  production_period: '', features: '', vulnerability: '', images: [], videos: [] },
   { title: '5',  production_period: '', features: '', vulnerability: '', images: [], videos: [] },
   { title: '6',  production_period: '', features: '', vulnerability: '', images: [], videos: [] },
   { title: '7',  production_period: '', features: '', vulnerability: '', images: [], videos: [] },
   { title: '8',  production_period: '', features: '', vulnerability: '', images: [], videos: [] },
-  { title: 'X',  production_period: '', features: '', vulnerability: '', images: [], videos: [] },
-  { title: '11', production_period: '', features: '', vulnerability: '', images: [], videos: [] },
-  { title: '12', production_period: '', features: '', vulnerability: '', images: [], videos: [] }
+  { title: '9',  production_period: '', features: '', vulnerability: '', images: [], videos: [] }
 ])
 
 
@@ -61,12 +62,16 @@ Phone.create([
   { generation_id: 8, model_title: 'iphone 12 Mini',    model_overview: '', images: [], videos: [] },
   { generation_id: 8, model_title: 'iphone 12',         model_overview: '', images: [], videos: [] },
   { generation_id: 8, model_title: 'iphone 12 Pro',     model_overview: '', images: [], videos: [] },
-  { generation_id: 8, model_title: 'iphone 12 Pro Max', model_overview: '', images: [], videos: [] }
+  { generation_id: 8, model_title: 'iphone 12 Pro Max', model_overview: '', images: [], videos: [] },
+  { generation_id: 9, model_title: 'iphone 13',         model_overview: '', images: [], videos: [] },
+  { generation_id: 9, model_title: 'iphone 13 Mini',    model_overview: '', images: [], videos: [] },
+  { generation_id: 9, model_title: 'iphone 13 Pro',     model_overview: '', images: [], videos: [] },
+  { generation_id: 9, model_title: 'iphone 13 Pro Max', model_overview: '', images: [], videos: [] }
 ])
 
 
 # -----------------------------------------------------------------------------------------
-# makbooks
+# macbooks
 # -----------------------------------------------------------------------------------------
 
 
@@ -854,7 +859,7 @@ Makbook.create([
 
 
 # -----------------------------------------------------------------------------------------
-# makbooks
+# macbooks
 # -----------------------------------------------------------------------------------------
 
 
@@ -1474,7 +1479,7 @@ AppleWatch.create([
 
 
 # -----------------------------------------------------------------------------------------
-# iphone models
+# IPHONE MODELS
 # -----------------------------------------------------------------------------------------
 
 
@@ -1503,12 +1508,16 @@ Model.create([
   { generation_id: 8, phone_id: 22, title: 'iphone 12 Mini',    images: [], videos: [] },
   { generation_id: 8, phone_id: 23, title: 'iphone 12',         images: [], videos: [] },
   { generation_id: 8, phone_id: 24, title: 'iphone 12 Pro',     images: [], videos: [] },
-  { generation_id: 8, phone_id: 25, title: 'iphone 12 Pro Max', images: [], videos: [] }
+  { generation_id: 8, phone_id: 25, title: 'iphone 12 Pro Max', images: [], videos: [] },
+  { generation_id: 9, phone_id: 26, title: 'iphone 13',         images: [], videos: [] },
+  { generation_id: 9, phone_id: 27, title: 'iphone 13 Mini',    images: [], videos: [] },
+  { generation_id: 9, phone_id: 28, title: 'iphone 13 Pro',     images: [], videos: [] },
+  { generation_id: 9, phone_id: 29, title: 'iphone 13 Pro Max', images: [], videos: [] },
 ])
 
 
 # -----------------------------------------------------------------------------------------
-# modules
+# MODULES
 # -----------------------------------------------------------------------------------------
 
 
@@ -1522,7 +1531,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 1,
+
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     1,
@@ -1533,7 +1544,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     2,
@@ -1544,7 +1556,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     3,
@@ -1555,7 +1568,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     4,
@@ -1566,7 +1580,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     5,
@@ -1577,7 +1592,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     6,
@@ -1588,7 +1604,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     7,
@@ -1599,7 +1616,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     8,
@@ -1615,7 +1633,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 1,
+
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     9,
@@ -1626,7 +1646,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     10,
@@ -1637,7 +1658,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     11,
@@ -1648,7 +1670,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     12,
@@ -1659,7 +1682,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     13,
@@ -1670,7 +1694,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     14,
@@ -1686,7 +1711,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 1,
+
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     14,
@@ -1702,7 +1729,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------------------
 
-  { generation_id: 1,
+
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     17,
@@ -1713,7 +1742,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     18,
@@ -1724,7 +1754,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     19,
@@ -1735,7 +1766,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     20,
@@ -1746,7 +1778,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     21,
@@ -1757,7 +1790,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     22,
@@ -1768,7 +1802,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     23,
@@ -1779,7 +1814,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     24,
@@ -1790,7 +1826,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     25,
@@ -1801,7 +1838,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     36,
@@ -1812,7 +1850,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     37,
@@ -1823,7 +1862,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     38,
@@ -1834,7 +1874,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     39,
@@ -1845,7 +1886,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     40,
@@ -1856,7 +1898,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     41,
@@ -1867,7 +1910,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     42,
@@ -1878,7 +1922,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     43,
@@ -1889,7 +1934,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     44,
@@ -1900,7 +1946,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      1,
     model_id:      1,
     defect_id:     45,
@@ -1920,7 +1967,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 1,
+
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     1,
@@ -1931,7 +1980,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     2,
@@ -1942,7 +1992,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     3,
@@ -1953,7 +2004,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     4,
@@ -1964,7 +2016,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     5,
@@ -1975,7 +2028,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     6,
@@ -1986,7 +2040,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     7,
@@ -1997,7 +2052,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     8,
@@ -2013,7 +2069,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 1,
+
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     9,
@@ -2024,7 +2082,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     10,
@@ -2035,7 +2094,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     11,
@@ -2046,7 +2106,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     12,
@@ -2057,7 +2118,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     13,
@@ -2068,7 +2130,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     14,
@@ -2084,7 +2147,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 1,
+
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     14,
@@ -2100,7 +2165,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------------------
 
-  { generation_id: 1,
+
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     17,
@@ -2111,7 +2178,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     18,
@@ -2122,7 +2190,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     19,
@@ -2133,7 +2202,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     20,
@@ -2144,7 +2214,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     21,
@@ -2155,7 +2226,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     22,
@@ -2166,7 +2238,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     23,
@@ -2177,7 +2250,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     24,
@@ -2188,7 +2262,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     25,
@@ -2199,7 +2274,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     36,
@@ -2210,7 +2286,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     37,
@@ -2221,7 +2298,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     38,
@@ -2232,7 +2310,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     39,
@@ -2243,7 +2322,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     40,
@@ -2254,7 +2334,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     41,
@@ -2265,7 +2346,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     42,
@@ -2276,7 +2358,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     43,
@@ -2287,7 +2370,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     44,
@@ -2298,7 +2382,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 1,
+  {
+    generation_id: 1,
     phone_id:      2,
     model_id:      2,
     defect_id:     45,
@@ -2318,7 +2403,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     1,
@@ -2329,7 +2416,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     2,
@@ -2340,7 +2428,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     3,
@@ -2351,7 +2440,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     4,
@@ -2362,7 +2452,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     5,
@@ -2373,7 +2464,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     6,
@@ -2384,7 +2476,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     7,
@@ -2395,7 +2488,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     8,
@@ -2411,7 +2505,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     9,
@@ -2422,7 +2518,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     10,
@@ -2433,7 +2530,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     11,
@@ -2444,7 +2542,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     12,
@@ -2455,7 +2554,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     13,
@@ -2466,7 +2566,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     14,
@@ -2482,7 +2583,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     14,
@@ -2498,7 +2601,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     17,
@@ -2509,7 +2614,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     18,
@@ -2520,7 +2626,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     19,
@@ -2531,7 +2638,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     20,
@@ -2542,7 +2650,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     21,
@@ -2553,7 +2662,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     22,
@@ -2564,7 +2674,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     23,
@@ -2575,7 +2686,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     24,
@@ -2586,7 +2698,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     25,
@@ -2597,7 +2710,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     36,
@@ -2608,7 +2722,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     37,
@@ -2619,7 +2734,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     38,
@@ -2630,7 +2746,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     39,
@@ -2641,7 +2758,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     40,
@@ -2652,7 +2770,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     41,
@@ -2663,7 +2782,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     42,
@@ -2674,7 +2794,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     43,
@@ -2685,7 +2806,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     44,
@@ -2696,7 +2818,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      3,
     model_id:      3,
     defect_id:     45,
@@ -2716,7 +2839,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     1,
@@ -2727,7 +2852,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     2,
@@ -2738,7 +2864,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     3,
@@ -2749,7 +2876,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     4,
@@ -2760,7 +2888,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     5,
@@ -2771,7 +2900,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     6,
@@ -2782,7 +2912,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     7,
@@ -2793,7 +2924,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     8,
@@ -2809,7 +2941,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     9,
@@ -2820,7 +2954,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     10,
@@ -2831,7 +2966,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     11,
@@ -2842,7 +2978,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     12,
@@ -2853,7 +2990,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     13,
@@ -2864,7 +3002,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     14,
@@ -2880,7 +3019,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     14,
@@ -2896,7 +3037,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     17,
@@ -2907,7 +3050,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     18,
@@ -2918,7 +3062,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     19,
@@ -2929,7 +3074,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     20,
@@ -2940,7 +3086,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     21,
@@ -2951,7 +3098,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     22,
@@ -2962,7 +3110,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     23,
@@ -2973,7 +3122,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     24,
@@ -2984,7 +3134,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     25,
@@ -2995,7 +3146,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     36,
@@ -3006,7 +3158,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     37,
@@ -3017,7 +3170,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     38,
@@ -3028,7 +3182,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     39,
@@ -3039,7 +3194,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     40,
@@ -3050,7 +3206,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     41,
@@ -3061,7 +3218,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     42,
@@ -3072,7 +3230,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     43,
@@ -3083,7 +3242,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     44,
@@ -3094,7 +3254,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      4,
     model_id:      4,
     defect_id:     45,
@@ -3114,7 +3275,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     1,
@@ -3125,7 +3288,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     2,
@@ -3136,7 +3300,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     3,
@@ -3147,7 +3312,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     4,
@@ -3158,7 +3324,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     5,
@@ -3169,7 +3336,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     6,
@@ -3180,7 +3348,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     7,
@@ -3191,7 +3360,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     8,
@@ -3207,7 +3377,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     9,
@@ -3218,7 +3390,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     10,
@@ -3229,7 +3402,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     11,
@@ -3240,7 +3414,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     12,
@@ -3251,7 +3426,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     13,
@@ -3262,7 +3438,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     14,
@@ -3278,7 +3455,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     14,
@@ -3294,7 +3473,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     17,
@@ -3305,7 +3486,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     18,
@@ -3316,7 +3498,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     19,
@@ -3327,7 +3510,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     20,
@@ -3338,7 +3522,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     21,
@@ -3349,7 +3534,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     22,
@@ -3360,7 +3546,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     23,
@@ -3371,7 +3558,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     24,
@@ -3382,7 +3570,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     25,
@@ -3393,7 +3582,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     36,
@@ -3404,7 +3594,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     37,
@@ -3415,7 +3606,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     38,
@@ -3426,7 +3618,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     39,
@@ -3437,7 +3630,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     40,
@@ -3448,7 +3642,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     41,
@@ -3459,7 +3654,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     42,
@@ -3470,7 +3666,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     43,
@@ -3481,7 +3678,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     44,
@@ -3492,7 +3690,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      5,
     model_id:      5,
     defect_id:     45,
@@ -3512,7 +3711,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     1,
@@ -3523,7 +3724,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     2,
@@ -3534,7 +3736,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     3,
@@ -3545,7 +3748,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     4,
@@ -3556,7 +3760,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     5,
@@ -3567,7 +3772,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     6,
@@ -3578,7 +3784,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     7,
@@ -3589,7 +3796,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     8,
@@ -3605,7 +3813,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     9,
@@ -3616,7 +3826,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     10,
@@ -3627,7 +3838,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     11,
@@ -3638,7 +3850,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     12,
@@ -3649,7 +3862,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     13,
@@ -3660,7 +3874,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     14,
@@ -3676,7 +3891,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     14,
@@ -3692,7 +3909,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 2,
+
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     17,
@@ -3703,7 +3922,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     18,
@@ -3714,7 +3934,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     19,
@@ -3725,7 +3946,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     20,
@@ -3736,7 +3958,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     21,
@@ -3747,7 +3970,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     22,
@@ -3758,7 +3982,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     23,
@@ -3769,7 +3994,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     24,
@@ -3780,7 +4006,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     25,
@@ -3791,7 +4018,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     36,
@@ -3802,7 +4030,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     37,
@@ -3813,7 +4042,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     38,
@@ -3824,7 +4054,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     39,
@@ -3835,7 +4066,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     40,
@@ -3846,7 +4078,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     41,
@@ -3857,7 +4090,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     42,
@@ -3868,7 +4102,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     43,
@@ -3879,7 +4114,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     44,
@@ -3890,7 +4126,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 2,
+  {
+    generation_id: 2,
     phone_id:      6,
     model_id:      6,
     defect_id:     45,
@@ -3910,7 +4147,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     1,
@@ -3921,7 +4160,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     2,
@@ -3932,7 +4172,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     3,
@@ -3943,7 +4184,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     4,
@@ -3954,7 +4196,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     5,
@@ -3965,7 +4208,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      6,
     model_id:      7,
     defect_id:     6,
@@ -3976,7 +4220,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     7,
@@ -3987,7 +4232,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     8,
@@ -4003,7 +4249,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     9,
@@ -4014,7 +4262,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     10,
@@ -4025,7 +4274,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     11,
@@ -4036,7 +4286,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     12,
@@ -4047,7 +4298,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     13,
@@ -4058,7 +4310,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     14,
@@ -4074,7 +4327,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     14,
@@ -4090,7 +4345,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     17,
@@ -4101,7 +4358,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     18,
@@ -4112,7 +4370,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     19,
@@ -4123,7 +4382,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     20,
@@ -4134,7 +4394,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     21,
@@ -4145,7 +4406,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     22,
@@ -4156,7 +4418,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     23,
@@ -4167,7 +4430,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     24,
@@ -4178,7 +4442,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     25,
@@ -4189,7 +4454,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     36,
@@ -4200,7 +4466,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     37,
@@ -4211,7 +4478,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     38,
@@ -4222,7 +4490,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     39,
@@ -4233,7 +4502,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     40,
@@ -4244,7 +4514,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     41,
@@ -4255,7 +4526,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     42,
@@ -4266,7 +4538,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     43,
@@ -4277,7 +4550,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     44,
@@ -4288,7 +4562,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      7,
     model_id:      7,
     defect_id:     45,
@@ -4308,7 +4583,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     1,
@@ -4319,7 +4596,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     2,
@@ -4330,7 +4608,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     3,
@@ -4341,7 +4620,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     4,
@@ -4352,7 +4632,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     5,
@@ -4363,7 +4644,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     6,
@@ -4374,7 +4656,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     7,
@@ -4385,7 +4668,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     8,
@@ -4401,7 +4685,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     9,
@@ -4412,7 +4698,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     10,
@@ -4423,7 +4710,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     11,
@@ -4434,7 +4722,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     12,
@@ -4445,7 +4734,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     13,
@@ -4456,7 +4746,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     14,
@@ -4472,7 +4763,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     14,
@@ -4488,7 +4781,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     17,
@@ -4499,7 +4794,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     18,
@@ -4510,7 +4806,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     19,
@@ -4521,7 +4818,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     20,
@@ -4532,7 +4830,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     21,
@@ -4543,7 +4842,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     22,
@@ -4554,7 +4854,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     23,
@@ -4565,7 +4866,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     24,
@@ -4576,7 +4878,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     25,
@@ -4587,7 +4890,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     36,
@@ -4598,7 +4902,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     37,
@@ -4609,7 +4914,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     38,
@@ -4620,7 +4926,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     39,
@@ -4631,7 +4938,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     40,
@@ -4642,7 +4950,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     41,
@@ -4653,7 +4962,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     42,
@@ -4664,7 +4974,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     43,
@@ -4675,7 +4986,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     44,
@@ -4686,7 +4998,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      8,
     model_id:      8,
     defect_id:     45,
@@ -4706,7 +5019,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     1,
@@ -4717,7 +5032,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     2,
@@ -4728,7 +5044,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     3,
@@ -4739,7 +5056,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     4,
@@ -4750,7 +5068,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     5,
@@ -4761,7 +5080,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     6,
@@ -4772,7 +5092,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     7,
@@ -4783,7 +5104,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     8,
@@ -4799,7 +5121,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     9,
@@ -4810,7 +5134,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     10,
@@ -4821,7 +5146,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     11,
@@ -4832,7 +5158,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     12,
@@ -4843,7 +5170,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     13,
@@ -4854,7 +5182,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     14,
@@ -4870,7 +5199,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     14,
@@ -4886,7 +5217,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     17,
@@ -4897,7 +5230,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     18,
@@ -4908,7 +5242,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     19,
@@ -4919,7 +5254,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     20,
@@ -4930,7 +5266,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     21,
@@ -4941,7 +5278,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     22,
@@ -4952,7 +5290,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     23,
@@ -4963,7 +5302,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     24,
@@ -4974,7 +5314,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     25,
@@ -4985,7 +5326,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     36,
@@ -4996,7 +5338,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     37,
@@ -5007,7 +5350,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     38,
@@ -5018,7 +5362,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     39,
@@ -5029,7 +5374,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     40,
@@ -5040,7 +5386,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     41,
@@ -5051,7 +5398,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     42,
@@ -5062,7 +5410,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     43,
@@ -5073,7 +5422,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     44,
@@ -5084,7 +5434,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      9,
     model_id:      9,
     defect_id:     45,
@@ -5104,7 +5455,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     1,
@@ -5115,7 +5468,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     2,
@@ -5126,7 +5480,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     3,
@@ -5137,7 +5492,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     4,
@@ -5148,7 +5504,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     5,
@@ -5159,7 +5516,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     6,
@@ -5170,7 +5528,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     7,
@@ -5181,7 +5540,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     8,
@@ -5197,7 +5557,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     9,
@@ -5208,7 +5570,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     10,
@@ -5219,7 +5582,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     11,
@@ -5230,7 +5594,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     12,
@@ -5241,7 +5606,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     13,
@@ -5252,7 +5618,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     14,
@@ -5268,7 +5635,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     14,
@@ -5284,7 +5653,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 3,
+
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     17,
@@ -5295,7 +5666,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     18,
@@ -5306,7 +5678,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     19,
@@ -5317,7 +5690,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     20,
@@ -5328,7 +5702,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     21,
@@ -5339,7 +5714,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     22,
@@ -5350,7 +5726,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     23,
@@ -5361,7 +5738,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     24,
@@ -5372,7 +5750,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     25,
@@ -5383,7 +5762,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     36,
@@ -5394,7 +5774,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     37,
@@ -5405,7 +5786,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     38,
@@ -5416,7 +5798,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     39,
@@ -5427,7 +5810,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     40,
@@ -5438,7 +5822,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     41,
@@ -5449,7 +5834,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     42,
@@ -5460,7 +5846,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     43,
@@ -5471,7 +5858,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     44,
@@ -5482,7 +5870,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 3,
+  {
+    generation_id: 3,
     phone_id:      10,
     model_id:      10,
     defect_id:     45,
@@ -5502,7 +5891,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 4,
+
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     1,
@@ -5513,7 +5904,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     2,
@@ -5524,7 +5916,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     3,
@@ -5535,7 +5928,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     4,
@@ -5546,7 +5940,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     5,
@@ -5557,7 +5952,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     6,
@@ -5568,7 +5964,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     7,
@@ -5579,7 +5976,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     8,
@@ -5595,7 +5993,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 4,
+
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     9,
@@ -5606,7 +6006,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     10,
@@ -5617,7 +6018,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     11,
@@ -5628,7 +6030,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     12,
@@ -5639,7 +6042,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     13,
@@ -5650,7 +6054,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     14,
@@ -5666,7 +6071,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 4,
+
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     14,
@@ -5682,7 +6089,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 4,
+
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     17,
@@ -5693,7 +6102,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     18,
@@ -5704,7 +6114,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     19,
@@ -5715,7 +6126,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     20,
@@ -5726,7 +6138,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     21,
@@ -5737,7 +6150,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     22,
@@ -5748,7 +6162,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     23,
@@ -5759,7 +6174,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     24,
@@ -5770,7 +6186,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     25,
@@ -5781,7 +6198,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     36,
@@ -5792,7 +6210,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     37,
@@ -5803,7 +6222,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     38,
@@ -5814,7 +6234,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     39,
@@ -5825,7 +6246,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     40,
@@ -5836,7 +6258,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     41,
@@ -5847,7 +6270,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     42,
@@ -5858,7 +6282,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     43,
@@ -5869,7 +6294,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     44,
@@ -5880,7 +6306,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      11,
     model_id:      11,
     defect_id:     45,
@@ -5900,7 +6327,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 4,
+
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     1,
@@ -5911,7 +6340,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     2,
@@ -5922,7 +6352,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     3,
@@ -5933,7 +6364,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     4,
@@ -5944,7 +6376,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     5,
@@ -5955,7 +6388,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     6,
@@ -5966,7 +6400,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     7,
@@ -5977,7 +6412,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     8,
@@ -5993,7 +6429,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 4,
+
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     9,
@@ -6004,7 +6442,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     10,
@@ -6015,7 +6454,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     11,
@@ -6026,7 +6466,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     12,
@@ -6037,7 +6478,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     13,
@@ -6048,7 +6490,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     14,
@@ -6064,7 +6507,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 4,
+
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     14,
@@ -6080,7 +6525,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 4,
+
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     17,
@@ -6091,7 +6538,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     18,
@@ -6102,7 +6550,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     19,
@@ -6113,7 +6562,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     20,
@@ -6124,7 +6574,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     21,
@@ -6135,7 +6586,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     22,
@@ -6146,7 +6598,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     23,
@@ -6157,7 +6610,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     24,
@@ -6168,7 +6622,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     25,
@@ -6179,7 +6634,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     36,
@@ -6190,7 +6646,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     37,
@@ -6201,7 +6658,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     38,
@@ -6212,7 +6670,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     39,
@@ -6223,7 +6682,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     40,
@@ -6234,7 +6694,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     41,
@@ -6245,7 +6706,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     42,
@@ -6256,7 +6718,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     43,
@@ -6267,7 +6730,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     44,
@@ -6278,7 +6742,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 4,
+  {
+    generation_id: 4,
     phone_id:      12,
     model_id:      12,
     defect_id:     45,
@@ -6298,7 +6763,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 5,
+
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     1,
@@ -6309,7 +6776,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     2,
@@ -6320,7 +6788,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     3,
@@ -6331,7 +6800,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     4,
@@ -6342,7 +6812,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     5,
@@ -6353,7 +6824,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     6,
@@ -6364,7 +6836,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     7,
@@ -6375,7 +6848,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     8,
@@ -6391,7 +6865,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 5,
+
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     9,
@@ -6402,7 +6878,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     10,
@@ -6413,7 +6890,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     11,
@@ -6424,7 +6902,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     12,
@@ -6435,7 +6914,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     13,
@@ -6446,7 +6926,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     14,
@@ -6462,7 +6943,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 5,
+
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     14,
@@ -6478,7 +6961,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 5,
+
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     17,
@@ -6489,7 +6974,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     18,
@@ -6500,7 +6986,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     19,
@@ -6511,7 +6998,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     20,
@@ -6522,7 +7010,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     21,
@@ -6533,7 +7022,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     22,
@@ -6544,7 +7034,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     23,
@@ -6555,7 +7046,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     24,
@@ -6566,7 +7058,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     25,
@@ -6577,7 +7070,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     36,
@@ -6588,7 +7082,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     37,
@@ -6599,7 +7094,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     38,
@@ -6610,7 +7106,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     39,
@@ -6621,7 +7118,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     40,
@@ -6632,7 +7130,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     41,
@@ -6643,7 +7142,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     42,
@@ -6654,7 +7154,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     43,
@@ -6665,7 +7166,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     44,
@@ -6676,7 +7178,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      13,
     model_id:      13,
     defect_id:     45,
@@ -6696,7 +7199,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 5,
+
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     1,
@@ -6707,7 +7212,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     2,
@@ -6718,7 +7224,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     3,
@@ -6729,7 +7236,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     4,
@@ -6740,7 +7248,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     5,
@@ -6751,7 +7260,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     6,
@@ -6762,7 +7272,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     7,
@@ -6773,7 +7284,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     8,
@@ -6789,7 +7301,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 5,
+
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     9,
@@ -6800,7 +7314,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     10,
@@ -6811,7 +7326,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     11,
@@ -6822,7 +7338,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     12,
@@ -6833,7 +7350,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     13,
@@ -6844,7 +7362,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     14,
@@ -6860,7 +7379,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 5,
+
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     14,
@@ -6876,7 +7397,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 5,
+
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     17,
@@ -6887,7 +7410,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     18,
@@ -6898,7 +7422,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     19,
@@ -6909,7 +7434,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     20,
@@ -6920,7 +7446,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     21,
@@ -6931,7 +7458,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     22,
@@ -6942,7 +7470,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     23,
@@ -6953,7 +7482,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     24,
@@ -6964,7 +7494,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     25,
@@ -6975,7 +7506,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     36,
@@ -6986,7 +7518,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     37,
@@ -6997,7 +7530,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     38,
@@ -7008,7 +7542,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     39,
@@ -7019,7 +7554,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     40,
@@ -7030,7 +7566,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     41,
@@ -7041,7 +7578,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     42,
@@ -7052,7 +7590,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     43,
@@ -7063,7 +7602,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     44,
@@ -7074,7 +7614,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 5,
+  {
+    generation_id: 5,
     phone_id:      14,
     model_id:      14,
     defect_id:     45,
@@ -7094,7 +7635,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     1,
@@ -7105,7 +7648,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     2,
@@ -7116,7 +7660,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     3,
@@ -7127,7 +7672,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     4,
@@ -7138,7 +7684,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     5,
@@ -7149,7 +7696,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     6,
@@ -7160,7 +7708,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     7,
@@ -7171,7 +7720,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     8,
@@ -7187,7 +7737,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     9,
@@ -7198,7 +7750,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     10,
@@ -7209,7 +7762,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     11,
@@ -7220,7 +7774,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     12,
@@ -7231,7 +7786,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     13,
@@ -7242,7 +7798,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     14,
@@ -7258,7 +7815,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     14,
@@ -7274,7 +7833,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     17,
@@ -7285,7 +7846,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     18,
@@ -7296,7 +7858,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     19,
@@ -7307,7 +7870,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     20,
@@ -7318,7 +7882,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     21,
@@ -7329,7 +7894,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     22,
@@ -7340,7 +7906,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     23,
@@ -7351,7 +7918,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     24,
@@ -7362,7 +7930,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     25,
@@ -7373,7 +7942,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     36,
@@ -7384,7 +7954,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     37,
@@ -7395,7 +7966,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     38,
@@ -7406,7 +7978,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     39,
@@ -7417,7 +7990,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     40,
@@ -7428,7 +8002,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     41,
@@ -7439,7 +8014,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     42,
@@ -7450,7 +8026,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     43,
@@ -7461,7 +8038,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     44,
@@ -7472,7 +8050,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      15,
     model_id:      15,
     defect_id:     45,
@@ -7492,7 +8071,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     1,
@@ -7503,7 +8084,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     2,
@@ -7514,7 +8096,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     3,
@@ -7525,7 +8108,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     4,
@@ -7536,7 +8120,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     5,
@@ -7547,7 +8132,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     6,
@@ -7558,7 +8144,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     7,
@@ -7569,7 +8156,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     8,
@@ -7585,7 +8173,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     9,
@@ -7596,7 +8186,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     10,
@@ -7607,7 +8198,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     11,
@@ -7618,7 +8210,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     12,
@@ -7629,7 +8222,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     13,
@@ -7640,7 +8234,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     14,
@@ -7656,7 +8251,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     14,
@@ -7672,7 +8269,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     17,
@@ -7683,7 +8282,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     18,
@@ -7694,7 +8294,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     19,
@@ -7705,7 +8306,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     20,
@@ -7716,7 +8318,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     21,
@@ -7727,7 +8330,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     22,
@@ -7738,7 +8342,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     23,
@@ -7749,7 +8354,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     24,
@@ -7760,7 +8366,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     25,
@@ -7771,7 +8378,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     36,
@@ -7782,7 +8390,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     37,
@@ -7793,7 +8402,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     38,
@@ -7804,7 +8414,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     39,
@@ -7815,7 +8426,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     40,
@@ -7826,7 +8438,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     41,
@@ -7837,7 +8450,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     42,
@@ -7848,7 +8462,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     43,
@@ -7859,7 +8474,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     44,
@@ -7870,7 +8486,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      16,
     model_id:      16,
     defect_id:     45,
@@ -7890,7 +8507,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     1,
@@ -7901,7 +8520,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     2,
@@ -7912,7 +8532,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     3,
@@ -7923,7 +8544,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     4,
@@ -7934,7 +8556,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     5,
@@ -7945,7 +8568,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     6,
@@ -7956,7 +8580,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     7,
@@ -7967,7 +8592,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     8,
@@ -7983,7 +8609,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     9,
@@ -7994,7 +8622,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     10,
@@ -8005,7 +8634,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     11,
@@ -8016,7 +8646,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     12,
@@ -8027,7 +8658,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     13,
@@ -8038,7 +8670,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     14,
@@ -8054,7 +8687,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     14,
@@ -8070,7 +8705,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     17,
@@ -8081,7 +8718,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     18,
@@ -8092,7 +8730,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     19,
@@ -8103,7 +8742,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     20,
@@ -8114,7 +8754,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     21,
@@ -8125,7 +8766,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     22,
@@ -8136,7 +8778,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     23,
@@ -8147,7 +8790,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     24,
@@ -8158,7 +8802,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     25,
@@ -8169,7 +8814,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     36,
@@ -8180,7 +8826,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     37,
@@ -8191,7 +8838,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     38,
@@ -8202,7 +8850,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     39,
@@ -8213,7 +8862,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     40,
@@ -8224,7 +8874,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     41,
@@ -8235,7 +8886,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     42,
@@ -8246,7 +8898,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     43,
@@ -8257,7 +8910,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     44,
@@ -8268,7 +8922,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      17,
     model_id:      17,
     defect_id:     45,
@@ -8288,7 +8943,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     1,
@@ -8299,7 +8956,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     2,
@@ -8310,7 +8968,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     3,
@@ -8321,7 +8980,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     4,
@@ -8332,7 +8992,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     5,
@@ -8343,7 +9004,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     6,
@@ -8354,7 +9016,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     7,
@@ -8365,7 +9028,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     8,
@@ -8381,7 +9045,9 @@ Mod.create([
   # bottom screws
   # ---------------------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     9,
@@ -8403,7 +9069,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     11,
@@ -8414,7 +9081,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     12,
@@ -8425,7 +9093,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     13,
@@ -8436,7 +9105,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     14,
@@ -8452,7 +9122,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     14,
@@ -8468,7 +9140,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 6,
+
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     17,
@@ -8479,7 +9153,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     18,
@@ -8490,7 +9165,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     19,
@@ -8501,7 +9177,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     20,
@@ -8512,7 +9189,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     21,
@@ -8523,7 +9201,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     22,
@@ -8534,7 +9213,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     23,
@@ -8545,7 +9225,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     24,
@@ -8556,7 +9237,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     25,
@@ -8567,7 +9249,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     36,
@@ -8578,7 +9261,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     37,
@@ -8589,7 +9273,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     38,
@@ -8600,7 +9285,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     39,
@@ -8611,7 +9297,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     40,
@@ -8622,7 +9309,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     41,
@@ -8633,7 +9321,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     42,
@@ -8644,7 +9333,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     43,
@@ -8655,7 +9345,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     44,
@@ -8666,7 +9357,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 6,
+  {
+    generation_id: 6,
     phone_id:      18,
     model_id:      18,
     defect_id:     45,
@@ -8686,7 +9378,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 7,
+
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     1,
@@ -8697,7 +9391,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     2,
@@ -8708,7 +9403,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     3,
@@ -8719,7 +9415,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     4,
@@ -8730,7 +9427,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     5,
@@ -8741,7 +9439,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     6,
@@ -8752,7 +9451,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     7,
@@ -8763,7 +9463,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     8,
@@ -8779,7 +9480,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 7,
+
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     14,
@@ -8795,7 +9498,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 7,
+
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     17,
@@ -8806,7 +9511,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     18,
@@ -8817,7 +9523,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     19,
@@ -8828,7 +9535,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     20,
@@ -8839,7 +9547,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     21,
@@ -8850,7 +9559,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     22,
@@ -8861,7 +9571,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     23,
@@ -8872,7 +9583,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     24,
@@ -8883,7 +9595,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     25,
@@ -8894,7 +9607,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     36,
@@ -8905,7 +9619,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     37,
@@ -8916,7 +9631,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     38,
@@ -8927,7 +9643,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     39,
@@ -8938,7 +9655,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     40,
@@ -8949,7 +9667,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     41,
@@ -8960,7 +9679,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     42,
@@ -8971,7 +9691,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     43,
@@ -8982,7 +9703,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     44,
@@ -8993,7 +9715,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      19,
     model_id:      19,
     defect_id:     45,
@@ -9013,7 +9736,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 7,
+
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     1,
@@ -9024,7 +9749,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     2,
@@ -9035,7 +9761,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     3,
@@ -9046,7 +9773,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     4,
@@ -9057,7 +9785,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     5,
@@ -9068,7 +9797,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     6,
@@ -9079,7 +9809,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     7,
@@ -9090,7 +9821,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     8,
@@ -9106,7 +9838,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 7,
+
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     14,
@@ -9122,7 +9856,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 7,
+
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     17,
@@ -9133,7 +9869,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     18,
@@ -9144,7 +9881,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     19,
@@ -9155,7 +9893,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     20,
@@ -9166,7 +9905,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     21,
@@ -9177,7 +9917,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     22,
@@ -9188,7 +9929,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     23,
@@ -9199,7 +9941,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     24,
@@ -9210,7 +9953,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     25,
@@ -9221,7 +9965,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     36,
@@ -9232,7 +9977,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     37,
@@ -9243,7 +9989,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     38,
@@ -9254,7 +10001,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     39,
@@ -9265,7 +10013,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     40,
@@ -9276,7 +10025,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     41,
@@ -9287,7 +10037,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     42,
@@ -9298,7 +10049,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     43,
@@ -9309,7 +10061,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     44,
@@ -9320,7 +10073,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      20,
     model_id:      20,
     defect_id:     45,
@@ -9340,7 +10094,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 7,
+
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     1,
@@ -9351,7 +10107,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     2,
@@ -9362,7 +10119,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     3,
@@ -9373,7 +10131,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     4,
@@ -9384,7 +10143,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     5,
@@ -9395,7 +10155,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     6,
@@ -9406,7 +10167,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     7,
@@ -9417,7 +10179,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     8,
@@ -9433,7 +10196,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 7,
+
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     14,
@@ -9449,7 +10214,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 7,
+
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     17,
@@ -9460,7 +10227,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     18,
@@ -9471,7 +10239,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     19,
@@ -9482,7 +10251,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     20,
@@ -9493,7 +10263,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     21,
@@ -9504,7 +10275,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     22,
@@ -9515,7 +10287,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     23,
@@ -9526,7 +10299,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     24,
@@ -9537,7 +10311,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     25,
@@ -9548,7 +10323,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     36,
@@ -9559,7 +10335,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     37,
@@ -9570,7 +10347,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     38,
@@ -9581,7 +10359,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     39,
@@ -9592,7 +10371,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     40,
@@ -9603,7 +10383,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     41,
@@ -9614,7 +10395,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     42,
@@ -9625,7 +10407,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     43,
@@ -9636,7 +10419,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     44,
@@ -9647,7 +10431,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 7,
+  {
+    generation_id: 7,
     phone_id:      21,
     model_id:      21,
     defect_id:     45,
@@ -9667,7 +10452,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 8,
+
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     1,
@@ -9678,7 +10465,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     2,
@@ -9689,7 +10477,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     3,
@@ -9700,7 +10489,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     4,
@@ -9711,7 +10501,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     5,
@@ -9722,7 +10513,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     6,
@@ -9733,7 +10525,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     7,
@@ -9744,7 +10537,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     8,
@@ -9760,7 +10554,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 8,
+
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     14,
@@ -9776,7 +10572,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 8,
+
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     17,
@@ -9787,7 +10585,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     18,
@@ -9798,7 +10597,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     19,
@@ -9809,7 +10609,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     20,
@@ -9820,7 +10621,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     21,
@@ -9831,7 +10633,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     22,
@@ -9842,7 +10645,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     23,
@@ -9853,7 +10657,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     24,
@@ -9864,7 +10669,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     25,
@@ -9875,7 +10681,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     36,
@@ -9886,7 +10693,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     37,
@@ -9897,7 +10705,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     38,
@@ -9908,7 +10717,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     39,
@@ -9919,7 +10729,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     40,
@@ -9930,7 +10741,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     41,
@@ -9941,7 +10753,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     42,
@@ -9952,7 +10765,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     43,
@@ -9963,7 +10777,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     44,
@@ -9974,7 +10789,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      22,
     model_id:      22,
     defect_id:     45,
@@ -9994,7 +10810,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 8,
+
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     1,
@@ -10005,7 +10823,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     2,
@@ -10016,7 +10835,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     3,
@@ -10027,7 +10847,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     4,
@@ -10038,7 +10859,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     5,
@@ -10049,7 +10871,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     6,
@@ -10060,7 +10883,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     7,
@@ -10071,7 +10895,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     8,
@@ -10087,7 +10912,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 8,
+
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     14,
@@ -10103,7 +10930,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 8,
+
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     17,
@@ -10114,7 +10943,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     18,
@@ -10125,7 +10955,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     19,
@@ -10136,7 +10967,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     20,
@@ -10147,7 +10979,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     21,
@@ -10158,7 +10991,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     22,
@@ -10169,7 +11003,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     23,
@@ -10180,7 +11015,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     24,
@@ -10191,7 +11027,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     25,
@@ -10202,7 +11039,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     36,
@@ -10213,7 +11051,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     37,
@@ -10224,7 +11063,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     38,
@@ -10235,7 +11075,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     39,
@@ -10246,7 +11087,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     40,
@@ -10257,7 +11099,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     41,
@@ -10268,7 +11111,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     42,
@@ -10279,7 +11123,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     43,
@@ -10290,7 +11135,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     44,
@@ -10301,7 +11147,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      23,
     model_id:      23,
     defect_id:     45,
@@ -10321,7 +11168,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 8,
+
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     1,
@@ -10332,7 +11181,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     2,
@@ -10343,7 +11193,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     3,
@@ -10354,7 +11205,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     4,
@@ -10365,7 +11217,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     5,
@@ -10376,7 +11229,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     6,
@@ -10387,7 +11241,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     7,
@@ -10398,7 +11253,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     8,
@@ -10414,7 +11270,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 8,
+
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     14,
@@ -10430,7 +11288,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 8,
+
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     17,
@@ -10441,7 +11301,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     18,
@@ -10452,7 +11313,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     19,
@@ -10463,7 +11325,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     20,
@@ -10474,7 +11337,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     21,
@@ -10485,7 +11349,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     22,
@@ -10496,7 +11361,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     23,
@@ -10507,7 +11373,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     24,
@@ -10518,7 +11385,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     25,
@@ -10529,7 +11397,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     36,
@@ -10540,7 +11409,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     37,
@@ -10551,7 +11421,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     38,
@@ -10562,7 +11433,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     39,
@@ -10573,7 +11445,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     40,
@@ -10584,7 +11457,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     41,
@@ -10595,7 +11469,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     42,
@@ -10606,7 +11481,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     43,
@@ -10617,7 +11493,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     44,
@@ -10628,7 +11505,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      24,
     model_id:      24,
     defect_id:     45,
@@ -10648,7 +11526,9 @@ Mod.create([
   # screen assembly
   # ---------------------------------------------------------------------
 
-  { generation_id: 8,
+
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     1,
@@ -10659,7 +11539,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     2,
@@ -10670,7 +11551,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     3,
@@ -10681,7 +11563,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     4,
@@ -10692,7 +11575,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     5,
@@ -10703,7 +11587,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     6,
@@ -10714,7 +11599,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     7,
@@ -10725,7 +11611,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     8,
@@ -10741,7 +11628,9 @@ Mod.create([
   # relation kit
   # ---------------------------------------------------------------------
 
-  { generation_id: 8,
+
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     14,
@@ -10757,7 +11646,9 @@ Mod.create([
   # logic board
   # ---------------------------------------------------------
 
-  { generation_id: 8,
+
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     17,
@@ -10768,7 +11659,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     18,
@@ -10779,7 +11671,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     19,
@@ -10790,7 +11683,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     20,
@@ -10801,7 +11695,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     21,
@@ -10812,7 +11707,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     22,
@@ -10823,7 +11719,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     23,
@@ -10834,7 +11731,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     24,
@@ -10845,7 +11743,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     25,
@@ -10856,7 +11755,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     36,
@@ -10867,7 +11767,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     37,
@@ -10878,7 +11779,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     38,
@@ -10889,7 +11791,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     39,
@@ -10900,7 +11803,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     40,
@@ -10911,7 +11815,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     41,
@@ -10922,7 +11827,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     42,
@@ -10933,7 +11839,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     43,
@@ -10944,7 +11851,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     44,
@@ -10955,7 +11863,8 @@ Mod.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
     model_id:      25,
     defect_id:     45,
@@ -10964,8 +11873,1445 @@ Mod.create([
     manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
     images:        [],
     videos:        []
+  },
+
+
+  # ---------------------------------------------------------------------
+  # iphone 13
+  # ---------------------------------------------------------------------
+
+  # ---------------------------------------------------------------------
+  # screen assembly
+  # ---------------------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     1,
+    repair_id:     26,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     2,
+    repair_id:     51,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     3,
+    repair_id:     76,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     4,
+    repair_id:     101,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     5,
+    repair_id:     126,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     6,
+    repair_id:     151,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     7,
+    repair_id:     176,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     8,
+    repair_id:     201,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+
+  # ---------------------------------------------------------------------
+  # relation kit
+  # ---------------------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     14,
+    repair_id:     356,
+    name:          'relation kit',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+
+  # ---------------------------------------------------------
+  # logic board
+  # ---------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     17,
+    repair_id:     426,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     18,
+    repair_id:     451,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     19,
+    repair_id:     476,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     20,
+    repair_id:     501,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     21,
+    repair_id:     526,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     22,
+    repair_id:     551,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     23,
+    repair_id:     576,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     24,
+    repair_id:     601,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     25,
+    repair_id:     626,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     36,
+    repair_id:     901,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     37,
+    repair_id:     926,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     38,
+    repair_id:     951,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     39,
+    repair_id:     976,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     40,
+    repair_id:     1001,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     41,
+    repair_id:     1026,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     42,
+    repair_id:     1051,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     43,
+    repair_id:     1076,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     44,
+    repair_id:     1101,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    model_id:      26,
+    defect_id:     45,
+    repair_id:     1126,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+
+  # ---------------------------------------------------------------------
+  # iphone 13 Mini
+  # ---------------------------------------------------------------------
+
+  # ---------------------------------------------------------------------
+  # screen assembly
+  # ---------------------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     1,
+    repair_id:     27,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     2,
+    repair_id:     52,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     3,
+    repair_id:     77,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     4,
+    repair_id:     102,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     5,
+    repair_id:     127,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     6,
+    repair_id:     152,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     7,
+    repair_id:     177,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     8,
+    repair_id:     202,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+
+  # ---------------------------------------------------------------------
+  # relation kit
+  # ---------------------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     14,
+    repair_id:     357,
+    name:          'relation kit',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+
+  # ---------------------------------------------------------
+  # logic board
+  # ---------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     17,
+    repair_id:     427,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     18,
+    repair_id:     452,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     19,
+    repair_id:     477,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     20,
+    repair_id:     502,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     21,
+    repair_id:     527,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     22,
+    repair_id:     552,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     23,
+    repair_id:     577,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     24,
+    repair_id:     602,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     25,
+    repair_id:     627,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     36,
+    repair_id:     902,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     37,
+    repair_id:     927,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     38,
+    repair_id:     952,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     39,
+    repair_id:     977,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     40,
+    repair_id:     1002,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     41,
+    repair_id:     1027,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     42,
+    repair_id:     1052,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     43,
+    repair_id:     1077,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     44,
+    repair_id:     1102,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    model_id:      27,
+    defect_id:     45,
+    repair_id:     1127,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+
+  # ---------------------------------------------------------------------
+  # iphone 13 Pro
+  # ---------------------------------------------------------------------
+
+  # ---------------------------------------------------------------------
+  # screen assembly
+  # ---------------------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     1,
+    repair_id:     28,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     2,
+    repair_id:     53,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     3,
+    repair_id:     78,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     4,
+    repair_id:     103,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     5,
+    repair_id:     128,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     6,
+    repair_id:     153,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     7,
+    repair_id:     178,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     8,
+    repair_id:     203,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+
+  # ---------------------------------------------------------------------
+  # relation kit
+  # ---------------------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     14,
+    repair_id:     358,
+    name:          'relation kit',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+
+  # ---------------------------------------------------------
+  # logic board
+  # ---------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     17,
+    repair_id:     428,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     18,
+    repair_id:     453,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     19,
+    repair_id:     478,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     20,
+    repair_id:     503,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     21,
+    repair_id:     528,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     22,
+    repair_id:     553,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     23,
+    repair_id:     578,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     24,
+    repair_id:     603,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     25,
+    repair_id:     628,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     36,
+    repair_id:     903,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     37,
+    repair_id:     928,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     38,
+    repair_id:     953,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     39,
+    repair_id:     978,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     40,
+    repair_id:     1003,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     41,
+    repair_id:     1028,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     42,
+    repair_id:     1053,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     43,
+    repair_id:     1078,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     44,
+    repair_id:     1103,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    model_id:      28,
+    defect_id:     45,
+    repair_id:     1128,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+
+  # ---------------------------------------------------------------------
+  # iphone 13 Pro Max
+  # ---------------------------------------------------------------------
+
+  # ---------------------------------------------------------------------
+  # screen assembly
+  # ---------------------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     1,
+    repair_id:     29,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     2,
+    repair_id:     54,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     3,
+    repair_id:     79,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     4,
+    repair_id:     104,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     5,
+    repair_id:     129,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     6,
+    repair_id:     154,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     7,
+    repair_id:     179,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     8,
+    repair_id:     204,
+    name:          'screen assembly',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+
+  # ---------------------------------------------------------------------
+  # relation kit
+  # ---------------------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     14,
+    repair_id:     359,
+    name:          'relation kit',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+
+  # ---------------------------------------------------------
+  # logic board
+  # ---------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     17,
+    repair_id:     429,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     18,
+    repair_id:     454,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     19,
+    repair_id:     479,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     20,
+    repair_id:     504,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     21,
+    repair_id:     529,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     22,
+    repair_id:     554,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     23,
+    repair_id:     579,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     24,
+    repair_id:     604,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     25,
+    repair_id:     629,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     36,
+    repair_id:     904,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     37,
+    repair_id:     929,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     38,
+    repair_id:     954,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     39,
+    repair_id:     979,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     40,
+    repair_id:     1004,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     41,
+    repair_id:     1029,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     42,
+    repair_id:     1054,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     43,
+    repair_id:     1079,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     44,
+    repair_id:     1104,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    model_id:      29,
+    defect_id:     45,
+    repair_id:     1129,
+    name:          'logic board',
+    manufacturers: [ 'linganbing', 'uozzini', 'LCD HOUSE' ],
+    images:        [],
+    videos:        []
   }
 ])
+
+
+# ---------------------------------------------------------------------
+# SPARE PARTS
+# ---------------------------------------------------------------------
 
 
 SparePart.create([
@@ -11164,6 +13510,7 @@ SparePart.create([
     images:        [],
     videos:        []
   },
+
 
   # -------------------------------------------------------------------------
   # iphone 4S
@@ -11379,6 +13726,7 @@ SparePart.create([
     images:        [],
     videos:        []
   },
+
 
   # ---------------------------------------------------------------------
   # iphone 5
@@ -11675,6 +14023,7 @@ SparePart.create([
     videos:        []
   },
 
+
   # ---------------------------------------------------------------------
   # iphone 5S
   # ---------------------------------------------------------------------
@@ -11960,6 +14309,7 @@ SparePart.create([
     videos:        []
   },
 
+
   # ---------------------------------------------------------------------
   # iphone 5C
   # ---------------------------------------------------------------------
@@ -12234,6 +14584,7 @@ SparePart.create([
     images:        [],
     videos:        []
   },
+
 
   # ---------------------------------------------------------------------
   # iphone SE
@@ -12519,6 +14870,7 @@ SparePart.create([
     images:        [],
     videos:        []
   },
+
 
   # ---------------------------------------------------------------------
   # iphone 6
@@ -12865,6 +15217,7 @@ SparePart.create([
     videos:        []
   },
 
+
   # ---------------------------------------------------------------------
   # iphone 6 plus
   # ---------------------------------------------------------------------
@@ -13209,6 +15562,7 @@ SparePart.create([
     images:        [],
     videos:        []
   },
+
 
   # ---------------------------------------------------------------------
   # iphon 6S
@@ -13555,6 +15909,7 @@ SparePart.create([
     videos:        []
   },
 
+
   # ---------------------------------------------------------------------
   # iphon 6S plus
   # ---------------------------------------------------------------------
@@ -13899,6 +16254,7 @@ SparePart.create([
     images:        [],
     videos:        []
   },
+
 
   # ---------------------------------------------------------------------
   # iphon 7
@@ -14425,6 +16781,7 @@ SparePart.create([
     videos:        []
   },
 
+
   # ---------------------------------------------------------------------
   # iphone 7 plus
   # ---------------------------------------------------------------------
@@ -14949,6 +17306,7 @@ SparePart.create([
     images:        [],
     videos:        []
   },
+
 
   # ---------------------------------------------------------------------
   # iphone 8
@@ -15475,6 +17833,7 @@ SparePart.create([
     videos:        []
   },
 
+
   # ---------------------------------------------------------------------
   # iphone 8 plus
   # ---------------------------------------------------------------------
@@ -15999,6 +18358,7 @@ SparePart.create([
     images:        [],
     videos:        []
   },
+
 
   # ---------------------------------------------------------------------
   # iphone X
@@ -16575,6 +18935,7 @@ SparePart.create([
     videos:        []
   },
 
+
   # ---------------------------------------------------------------------
   # iphone XS
   # ---------------------------------------------------------------------
@@ -17149,6 +19510,7 @@ SparePart.create([
     images:        [],
     videos:        []
   },
+
 
   # -------------------------------------------------------------------------
   # iphone XS Max
@@ -17725,6 +20087,7 @@ SparePart.create([
     videos:        []
   },
 
+
   # ---------------------------------------------------------------------
   # iphone XR
   # ---------------------------------------------------------------------
@@ -18289,6 +20652,7 @@ SparePart.create([
     images:        [],
     videos:        []
   },
+
 
   # ----------------------------------------------------------------------
   # iphone 11
@@ -18865,6 +21229,7 @@ SparePart.create([
     videos:        []
   },
 
+
   # ---------------------------------------------------------------------
   # iphone 11 Pro
   # ---------------------------------------------------------------------
@@ -19429,6 +21794,7 @@ SparePart.create([
     images:        [],
     videos:        []
   },
+
 
   # ---------------------------------------------------------------------
   # iphone 11 Pro Max
@@ -20005,6 +22371,7 @@ SparePart.create([
     videos:        []
   },
 
+
   # ---------------------------------------------------------------------
   # iphone 12 Mini
   # ---------------------------------------------------------------------
@@ -20579,6 +22946,7 @@ SparePart.create([
     images:        [],
     videos:        []
   },
+
 
   # ---------------------------------------------------------------------
   # iphone 12
@@ -21155,6 +23523,7 @@ SparePart.create([
     videos:        []
   },
 
+
   # ---------------------------------------------------------------------
   # iphone 12 Pro
   # ---------------------------------------------------------------------
@@ -21719,6 +24088,7 @@ SparePart.create([
     images:        [],
     videos:        []
   },
+
 
   # ---------------------------------------------------------------------
   # iphone 12 Pro Max
@@ -22293,8 +24663,2317 @@ SparePart.create([
     manufacturer:  '',
     images:        [],
     videos:        []
+  },
+
+
+  # ---------------------------------------------------------------------
+  # iphone 13
+  # ---------------------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        25,
+    name:          'processor',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        25,
+    name:          'modem',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'home FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'LCD shield plate',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'power button cable FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'test cable for home button and link cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'test cable for LCD screen and digitizer',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'power button cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'front panel assembly cable bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'grounding bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'test cable for front camera',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'battery connector bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'flash bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'rear camera FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'audio control cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'rear camera bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'power button',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'lightnight connector bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'audio control cable and bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'digitizer FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'test cable for LCD screen and digitizer',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'power button cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'microphone brace',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'earpiece speaker bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'home button bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'earpiece speaker mesh',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'front camera and sensor cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'loudspeaker',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'vibrator',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'home button gasket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'rear camera lens cover',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'home button link cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'battery',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'screen',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'display assembly adhesive',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'wi-fi diversity antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'top left antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'SIM card tray gasket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'top right antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'front camera and sensor holders',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'front panel clips',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'volume button bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'LCD shield plate',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'upper cable bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'SIM card tray',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'flash diffuser',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'SIM card slot',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'front panel assembly cable bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'display backlight',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'bottom screws',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'lightnight connector grounding spring contact',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'backlight diode',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'wi-fi / blutuse antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'cute switch bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'logic board back shield sticker',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'rear camera retaining bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    mod_id:        54,
+    name:          'wireless charging antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+
+  # ---------------------------------------------------------------------
+  # iphone 13 Mini
+  # ---------------------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        25,
+    name:          'processor',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        25,
+    name:          'modem',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'home FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'LCD shield plate',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'power button cable FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'test cable for home button and link cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'test cable for LCD screen and digitizer',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'power button cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'front panel assembly cable bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'grounding bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'test cable for front camera',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'battery connector bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'flash bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'rear camera FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'audio control cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'rear camera bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'power button',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'lightnight connector bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'audio control cable and bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'digitizer FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'test cable for LCD screen and digitizer',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'power button cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'microphone brace',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'earpiece speaker bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'home button bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'earpiece speaker mesh',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'front camera and sensor cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'loudspeaker',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'vibrator',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'home button gasket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'rear camera lens cover',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'home button link cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'battery',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'screen',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'display assembly adhesive',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'wi-fi diversity antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'top left antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'SIM card tray gasket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'top right antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'front camera and sensor holders',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'front panel clips',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'volume button bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'LCD shield plate',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'upper cable bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'SIM card tray',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'flash diffuser',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'SIM card slot',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'front panel assembly cable bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'display backlight',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'bottom screws',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'lightnight connector grounding spring contact',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'backlight diode',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'wi-fi / blutuse antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'cute switch bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'logic board back shield sticker',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'rear camera retaining bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    mod_id:        54,
+    name:          'wireless charging antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+
+  # ---------------------------------------------------------------------
+  # iphone 13 Mini
+  # ---------------------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        25,
+    name:          'processor',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        25,
+    name:          'modem',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'home FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'LCD shield plate',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'power button cable FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'test cable for home button and link cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'test cable for LCD screen and digitizer',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'power button cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'front panel assembly cable bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'grounding bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'test cable for front camera',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'battery connector bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'flash bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'rear camera FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'audio control cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'rear camera bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'power button',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'lightnight connector bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'audio control cable and bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'digitizer FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'test cable for LCD screen and digitizer',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'power button cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'microphone brace',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'earpiece speaker bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'home button bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'earpiece speaker mesh',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'front camera and sensor cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'loudspeaker',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'vibrator',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'home button gasket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'rear camera lens cover',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'home button link cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'battery',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'screen',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'display assembly adhesive',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'wi-fi diversity antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'top left antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'SIM card tray gasket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'top right antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'front camera and sensor holders',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'front panel clips',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'volume button bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'LCD shield plate',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'upper cable bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'SIM card tray',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'flash diffuser',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'SIM card slot',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'front panel assembly cable bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'display backlight',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'bottom screws',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'lightnight connector grounding spring contact',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'backlight diode',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'wi-fi / blutuse antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'cute switch bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'logic board back shield sticker',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'rear camera retaining bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    mod_id:        54,
+    name:          'wireless charging antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+
+  # ---------------------------------------------------------------------
+  # iphone 13 Mini
+  # ---------------------------------------------------------------------
+
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        25,
+    name:          'processor',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        25,
+    name:          'modem',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'home FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'LCD shield plate',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'power button cable FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'test cable for home button and link cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'test cable for LCD screen and digitizer',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'power button cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'front panel assembly cable bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'grounding bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'test cable for front camera',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'battery connector bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'flash bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'rear camera FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'audio control cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'rear camera bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'power button',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'lightnight connector bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'audio control cable and bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'digitizer FPC connector',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'test cable for LCD screen and digitizer',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'power button cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'microphone brace',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'earpiece speaker bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'home button bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'earpiece speaker mesh',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'front camera and sensor cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'loudspeaker',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'vibrator',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'home button gasket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'rear camera lens cover',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'home button link cable',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'battery',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'screen',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'display assembly adhesive',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'wi-fi diversity antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'top left antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'SIM card tray gasket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'top right antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'front camera and sensor holders',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'front panel clips',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'volume button bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'LCD shield plate',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'upper cable bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'SIM card tray',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'flash diffuser',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'SIM card slot',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'front panel assembly cable bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'display backlight',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'bottom screws',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'lightnight connector grounding spring contact',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'backlight diode',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'wi-fi / blutuse antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'cute switch bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'logic board back shield sticker',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'rear camera retaining bracket',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    mod_id:        54,
+    name:          'wireless charging antenna',
+    manufacturer:  '',
+    images:        [],
+    videos:        []
   }
 ])
+
+
+# ---------------------------------------------------------------------
+# DEFECTS
+# ---------------------------------------------------------------------
 
 
 Defect.create([
@@ -22599,6 +27278,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     1,
+    title:         'The screen not working',
+    description:   "Don't show nothing, just black screen.",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     1,
+    title:         'The screen not working',
+    description:   "Don't show nothing, just black screen.",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     1,
+    title:         'The screen not working',
+    description:   "Don't show nothing, just black screen.",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     1,
+    title:         'The screen not working',
+    description:   "Don't show nothing, just black screen.",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     1,
     title:         'The screen not working',
     description:   "Don't show nothing, just black screen.",
@@ -22914,6 +27641,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     2,
+    title:         'The screen is broken',
+    description:   "Physical damage to screen.",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     2,
+    title:         'The screen is broken',
+    description:   "Physical damage to screen.",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     2,
+    title:         'The screen is broken',
+    description:   "Physical damage to screen.",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     2,
+    title:         'The screen is broken',
+    description:   "Physical damage to screen.",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------
   # The screen flickers.
@@ -23211,6 +27986,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     3,
+    title:         'The screen flickers',
+    description:   "The screen matrix defect",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     3,
+    title:         'The screen flickers',
+    description:   "The screen matrix defect",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     3,
+    title:         'The screen flickers',
+    description:   "The screen matrix defect",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     3,
+    title:         'The screen flickers',
+    description:   "The screen matrix defect",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     3,
     title:         'The screen flickers',
     description:   "The screen matrix defect",
@@ -23526,6 +28349,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     4,
+    title:         'The screen is moving away',
+    description:   "Physical damage to the display module",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     4,
+    title:         'The screen is moving away',
+    description:   "Physical damage to the display module",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     4,
+    title:         'The screen is moving away',
+    description:   "Physical damage to the display module",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     4,
+    title:         'The screen is moving away',
+    description:   "Physical damage to the display module",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # ------------------
   # Screen with spots.
@@ -23823,6 +28694,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     5,
+    title:         'Screen with spots',
+    description:   "There are spots on the screen",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     5,
+    title:         'Screen with spots',
+    description:   "There are spots on the screen",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     5,
+    title:         'Screen with spots',
+    description:   "There are spots on the screen",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     5,
+    title:         'Screen with spots',
+    description:   "There are spots on the screen",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     5,
     title:         'Screen with spots',
     description:   "There are spots on the screen",
@@ -24138,6 +29057,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     6,
+    title:         'Screen is white / red / blue',
+    description:   "There are one color on the screen",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     6,
+    title:         'Screen is white / red / blue',
+    description:   "There are one color on the screen",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     6,
+    title:         'Screen is white / red / blue',
+    description:   "There are one color on the screen",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     6,
+    title:         'Screen is white / red / blue',
+    description:   "There are one color on the screen",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # -------------------------
   # The touchscreen is buggy.
@@ -24444,6 +29411,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     7,
+    title:         'The touchscreen is buggy',
+    description:   "Slow reaction of touchscreen",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     7,
+    title:         'The touchscreen is buggy',
+    description:   "Slow reaction of touchscreen",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     7,
+    title:         'The touchscreen is buggy',
+    description:   "Slow reaction of touchscreen",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     7,
+    title:         'The touchscreen is buggy',
+    description:   "Slow reaction of touchscreen",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # -------------------------------------------------
   # The screen does not go off during a conversation.
@@ -24741,6 +29756,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     8,
+    title:         'The screen does not go off during a conversation',
+    description:   "Screen must go off automatically during conversation, but it doesn't",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     8,
+    title:         'The screen does not go off during a conversation',
+    description:   "Screen must go off automatically during conversation, but it doesn't",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     8,
+    title:         'The screen does not go off during a conversation',
+    description:   "Screen must go off automatically during conversation, but it doesn't",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     8,
+    title:         'The screen does not go off during a conversation',
+    description:   "Screen must go off automatically during conversation, but it doesn't",
+    avatar:        '',
+    modules:       [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     8,
     title:         'The screen does not go off during a conversation',
     description:   "Screen must go off automatically during conversation, but it doesn't",
@@ -25061,6 +30124,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     9,
+    title:         "Touch ID doesn't work",
+    description:   "Does not read fingerprint during touch Touch ID",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     9,
+    title:         "Touch ID doesn't work",
+    description:   "Does not read fingerprint during touch Touch ID",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     9,
+    title:         "Touch ID doesn't work",
+    description:   "Does not read fingerprint during touch Touch ID",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     9,
+    title:         "Touch ID doesn't work",
+    description:   "Does not read fingerprint during touch Touch ID",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # -------------------------------
   # The vibro switch does not work.
@@ -25358,6 +30469,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     10,
+    title:         "The vibro switch does not work",
+    description:   "The vibration function is not turned on or off by switching from the switch button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     10,
+    title:         "The vibro switch does not work",
+    description:   "The vibration function is not turned on or off by switching from the switch button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     10,
+    title:         "The vibro switch does not work",
+    description:   "The vibration function is not turned on or off by switching from the switch button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     10,
+    title:         "The vibro switch does not work",
+    description:   "The vibration function is not turned on or off by switching from the switch button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     10,
     title:         "The vibro switch does not work",
     description:   "The vibration function is not turned on or off by switching from the switch button",
@@ -25673,6 +30832,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     11,
+    title:         "The volume buttons don't work",
+    description:   "The volume is not regulated by the volume control buttons",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     11,
+    title:         "The volume buttons don't work",
+    description:   "The volume is not regulated by the volume control buttons",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     11,
+    title:         "The volume buttons don't work",
+    description:   "The volume is not regulated by the volume control buttons",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     11,
+    title:         "The volume buttons don't work",
+    description:   "The volume is not regulated by the volume control buttons",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # -------------------------------
   # The power button does not work.
@@ -25979,6 +31186,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     12,
+    title:         "The power button does not work",
+    description:   "The phone does not turn on with the power button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     12,
+    title:         "The power button does not work",
+    description:   "The phone does not turn on with the power button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     12,
+    title:         "The power button does not work",
+    description:   "The phone does not turn on with the power button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     12,
+    title:         "The power button does not work",
+    description:   "The phone does not turn on with the power button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # -------------------------------
   # The power button does not work.
@@ -26276,6 +31531,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     13,
+    title:         "The Home button does not work",
+    description:   "No reaction during push Home button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     13,
+    title:         "The Home button does not work",
+    description:   "No reaction during push Home button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     13,
+    title:         "The Home button does not work",
+    description:   "No reaction during push Home button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     13,
+    title:         "The Home button does not work",
+    description:   "No reaction during push Home button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     13,
     title:         "The Home button does not work",
     description:   "No reaction during push Home button",
@@ -26582,6 +31885,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     14,
+    title:         "The buttons don't work",
+    description:   "No reaction during push any button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     14,
+    title:         "The buttons don't work",
+    description:   "No reaction during push any button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     14,
+    title:         "The buttons don't work",
+    description:   "No reaction during push any button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     14,
+    title:         "The buttons don't work",
+    description:   "No reaction during push any button",
+    avatar:        '',
+    modules:       [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     14,
     title:         "The buttons don't work",
     description:   "No reaction during push any button",
@@ -26901,6 +32252,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     15,
+    title:         "Water got in",
+    description:   "Water got in phone",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     15,
+    title:         "Water got in",
+    description:   "Water got in phone",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     15,
+    title:         "Water got in",
+    description:   "Water got in phone",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     15,
+    title:         "Water got in",
+    description:   "Water got in phone",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # ---------
   # Warms up.
@@ -27207,6 +32606,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     16,
+    title:         "Warms up",
+    description:   "Phone is warms up to fast",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     16,
+    title:         "Warms up",
+    description:   "Phone is warms up to fast",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     16,
+    title:         "Warms up",
+    description:   "Phone is warms up to fast",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     16,
+    title:         "Warms up",
+    description:   "Phone is warms up to fast",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # ------------------------
   # Automatically rebooting.
@@ -27513,6 +32960,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     17,
+    title:         "Automatically rebooting",
+    description:   "Phone is automatically rebooting again and agait",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     17,
+    title:         "Automatically rebooting",
+    description:   "Phone is automatically rebooting again and agait",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     17,
+    title:         "Automatically rebooting",
+    description:   "Phone is automatically rebooting again and agait",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     17,
+    title:         "Automatically rebooting",
+    description:   "Phone is automatically rebooting again and agait",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # ------------------------
   # Automatically rebooting.
@@ -27810,6 +33305,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     18,
+    title:         "Automatically turns off",
+    description:   "Phone is automatically turns off again and agait",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     18,
+    title:         "Automatically turns off",
+    description:   "Phone is automatically turns off again and agait",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     18,
+    title:         "Automatically turns off",
+    description:   "Phone is automatically turns off again and agait",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     18,
+    title:         "Automatically turns off",
+    description:   "Phone is automatically turns off again and agait",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     18,
     title:         "Automatically turns off",
     description:   "Phone is automatically turns off again and agait",
@@ -28125,6 +33668,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     19,
+    title:         "Hung on the logo",
+    description:   "Phone is hung on the logo",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     19,
+    title:         "Hung on the logo",
+    description:   "Phone is hung on the logo",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     19,
+    title:         "Hung on the logo",
+    description:   "Phone is hung on the logo",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     19,
+    title:         "Hung on the logo",
+    description:   "Phone is hung on the logo",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # -------------
   # Not included.
@@ -28422,6 +34013,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     20,
+    title:         "Not included",
+    description:   "Phone not included",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     20,
+    title:         "Not included",
+    description:   "Phone not included",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     20,
+    title:         "Not included",
+    description:   "Phone not included",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     20,
+    title:         "Not included",
+    description:   "Phone not included",
+    avatar:        '',
+    modules:       [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     20,
     title:         "Not included",
     description:   "Phone not included",
@@ -28741,6 +34380,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     21,
+    title:         "Headphones don't work",
+    description:   "There is no sound when headphones are connected",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     21,
+    title:         "Headphones don't work",
+    description:   "There is no sound when headphones are connected",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     21,
+    title:         "Headphones don't work",
+    description:   "There is no sound when headphones are connected",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     21,
+    title:         "Headphones don't work",
+    description:   "There is no sound when headphones are connected",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------
   # The speaker does not work.
@@ -29038,6 +34725,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     22,
+    title:         "The speaker does not work",
+    description:   "No any sound",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     22,
+    title:         "The speaker does not work",
+    description:   "No any sound",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     22,
+    title:         "The speaker does not work",
+    description:   "No any sound",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     22,
+    title:         "The speaker does not work",
+    description:   "No any sound",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     22,
     title:         "The speaker does not work",
     description:   "No any sound",
@@ -29353,6 +35088,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     22,
+    title:         "Bad sound",
+    description:   "The sound is too quiet",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     22,
+    title:         "Bad sound",
+    description:   "The sound is too quiet",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     22,
+    title:         "Bad sound",
+    description:   "The sound is too quiet",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     22,
+    title:         "Bad sound",
+    description:   "The sound is too quiet",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # -----------------------------
   # The microphone does not work.
@@ -29659,6 +35442,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     23,
+    title:         "The microphone does not work",
+    description:   "The microphone does not record audio",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     23,
+    title:         "The microphone does not work",
+    description:   "The microphone does not record audio",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     23,
+    title:         "The microphone does not work",
+    description:   "The microphone does not record audio",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     23,
+    title:         "The microphone does not work",
+    description:   "The microphone does not record audio",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # ---------
   # No sound.
@@ -29956,6 +35787,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     24,
+    title:         "No sound",
+    description:   "The phone does not make any sounds",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     24,
+    title:         "No sound",
+    description:   "The phone does not make any sounds",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     24,
+    title:         "No sound",
+    description:   "The phone does not make any sounds",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     24,
+    title:         "No sound",
+    description:   "The phone does not make any sounds",
+    avatar:        '',
+    modules:       [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     24,
     title:         "No sound",
     description:   "The phone does not make any sounds",
@@ -30275,6 +36154,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     25,
+    title:         "Case broken",
+    description:   "Physical damage to phone case",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     25,
+    title:         "Case broken",
+    description:   "Physical damage to phone case",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     25,
+    title:         "Case broken",
+    description:   "Physical damage to phone case",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     25,
+    title:         "Case broken",
+    description:   "Physical damage to phone case",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # -------------
   # Broken glass.
@@ -30572,6 +36499,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     26,
+    title:         "Broken glass",
+    description:   "Physical damage to glass on phone case",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     26,
+    title:         "Broken glass",
+    description:   "Physical damage to glass on phone case",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     26,
+    title:         "Broken glass",
+    description:   "Physical damage to glass on phone case",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     26,
+    title:         "Broken glass",
+    description:   "Physical damage to glass on phone case",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     26,
     title:         "Broken glass",
     description:   "Physical damage to glass on phone case",
@@ -30887,6 +36862,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     27,
+    title:         "The screen is moving away",
+    description:   "Physical damage to case and display module",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     27,
+    title:         "The screen is moving away",
+    description:   "Physical damage to case and display module",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     27,
+    title:         "The screen is moving away",
+    description:   "Physical damage to case and display module",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     27,
+    title:         "The screen is moving away",
+    description:   "Physical damage to case and display module",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # ---------------
   # Broken display.
@@ -31184,6 +37207,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     28,
+    title:         "Broken display",
+    description:   "Physical damage to case and display module",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     28,
+    title:         "Broken display",
+    description:   "Physical damage to case and display module",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     28,
+    title:         "Broken display",
+    description:   "Physical damage to case and display module",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     28,
+    title:         "Broken display",
+    description:   "Physical damage to case and display module",
+    avatar:        '',
+    modules:       [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     28,
     title:         "Broken display",
     description:   "Physical damage to case and display module",
@@ -31503,6 +37574,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     29,
+    title:         "Don't work GPS",
+    description:   "GPS not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     29,
+    title:         "Don't work GPS",
+    description:   "GPS not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     29,
+    title:         "Don't work GPS",
+    description:   "GPS not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     29,
+    title:         "Don't work GPS",
+    description:   "GPS not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # ---------------------
   # Don't work Bluetooth.
@@ -31800,6 +37919,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     30,
+    title:         "Don't work Bluetooth",
+    description:   "Bluetooth not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     30,
+    title:         "Don't work Bluetooth",
+    description:   "Bluetooth not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     30,
+    title:         "Don't work Bluetooth",
+    description:   "Bluetooth not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     30,
+    title:         "Don't work Bluetooth",
+    description:   "Bluetooth not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     30,
     title:         "Don't work Bluetooth",
     description:   "Bluetooth not working on phone",
@@ -32115,6 +38282,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     31,
+    title:         "The gyroscope does not work",
+    description:   "Gyroscope not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     31,
+    title:         "The gyroscope does not work",
+    description:   "Gyroscope not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     31,
+    title:         "The gyroscope does not work",
+    description:   "Gyroscope not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     31,
+    title:         "The gyroscope does not work",
+    description:   "Gyroscope not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # ------------------------------
   # Auto brightness does not work.
@@ -32412,6 +38627,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     32,
+    title:         "Auto brightness does not work",
+    description:   "Brightness not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     32,
+    title:         "Auto brightness does not work",
+    description:   "Brightness not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     32,
+    title:         "Auto brightness does not work",
+    description:   "Brightness not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     32,
+    title:         "Auto brightness does not work",
+    description:   "Brightness not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     32,
     title:         "Auto brightness does not work",
     description:   "Brightness not working on phone",
@@ -32727,6 +38990,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     33,
+    title:         "Vibration not work",
+    description:   "Vibration not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     33,
+    title:         "Vibration not work",
+    description:   "Vibration not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     33,
+    title:         "Vibration not work",
+    description:   "Vibration not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     33,
+    title:         "Vibration not work",
+    description:   "Vibration not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # ---------------
   # Wi-Fi not work.
@@ -33024,6 +39335,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     34,
+    title:         "Wi-Fi not work",
+    description:   "Wi-Fi not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     34,
+    title:         "Wi-Fi not work",
+    description:   "Wi-Fi not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     34,
+    title:         "Wi-Fi not work",
+    description:   "Wi-Fi not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     34,
+    title:         "Wi-Fi not work",
+    description:   "Wi-Fi not working on phone",
+    avatar:        '',
+    modules:       [ 'functions' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     34,
     title:         "Wi-Fi not work",
     description:   "Wi-Fi not working on phone",
@@ -33343,6 +39702,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     35,
+    title:         "Modem mode does not work",
+    description:   "Modem mode does not work on phone",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     35,
+    title:         "Modem mode does not work",
+    description:   "Modem mode does not work on phone",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     35,
+    title:         "Modem mode does not work",
+    description:   "Modem mode does not work on phone",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     35,
+    title:         "Modem mode does not work",
+    description:   "Modem mode does not work on phone",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # ---------------------------
   # The Internet does not work.
@@ -33640,6 +40047,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     36,
+    title:         "The Internet does not work",
+    description:   "The Internet does not work on phone",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     36,
+    title:         "The Internet does not work",
+    description:   "The Internet does not work on phone",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     36,
+    title:         "The Internet does not work",
+    description:   "The Internet does not work on phone",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     36,
+    title:         "The Internet does not work",
+    description:   "The Internet does not work on phone",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     36,
     title:         "The Internet does not work",
     description:   "The Internet does not work on phone",
@@ -33955,6 +40410,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     37,
+    title:         "Does not see the SIM card",
+    description:   "Phone does not see the SIM card",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     37,
+    title:         "Does not see the SIM card",
+    description:   "Phone does not see the SIM card",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     37,
+    title:         "Does not see the SIM card",
+    description:   "Phone does not see the SIM card",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     37,
+    title:         "Does not see the SIM card",
+    description:   "Phone does not see the SIM card",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # ------------------------------
   # It catches the network poorly.
@@ -34252,6 +40755,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     38,
+    title:         "It catches the network poorly",
+    description:   "Phone catches the network poorly",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     38,
+    title:         "It catches the network poorly",
+    description:   "Phone catches the network poorly",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     38,
+    title:         "It catches the network poorly",
+    description:   "Phone catches the network poorly",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     38,
+    title:         "It catches the network poorly",
+    description:   "Phone catches the network poorly",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     38,
     title:         "It catches the network poorly",
     description:   "Phone catches the network poorly",
@@ -34567,6 +41118,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     39,
+    title:         "Does not catch the network",
+    description:   "Phone does not catch the network",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     39,
+    title:         "Does not catch the network",
+    description:   "Phone does not catch the network",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     39,
+    title:         "Does not catch the network",
+    description:   "Phone does not catch the network",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     39,
+    title:         "Does not catch the network",
+    description:   "Phone does not catch the network",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # ---------------------------
   # The Wi-Fi is not connected.
@@ -34864,6 +41463,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     40,
+    title:         "The Wi-Fi is not connected",
+    description:   "Phone does not connected the Wi-Fi",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     40,
+    title:         "The Wi-Fi is not connected",
+    description:   "Phone does not connected the Wi-Fi",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     40,
+    title:         "The Wi-Fi is not connected",
+    description:   "Phone does not connected the Wi-Fi",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     40,
+    title:         "The Wi-Fi is not connected",
+    description:   "Phone does not connected the Wi-Fi",
+    avatar:        '',
+    modules:       [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     40,
     title:         "The Wi-Fi is not connected",
     description:   "Phone does not connected the Wi-Fi",
@@ -35183,6 +41830,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     41,
+    title:         "iTunes does not see the iPhone",
+    description:   "iTunes does not see the iPhone",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     41,
+    title:         "iTunes does not see the iPhone",
+    description:   "iTunes does not see the iPhone",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     41,
+    title:         "iTunes does not see the iPhone",
+    description:   "iTunes does not see the iPhone",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     41,
+    title:         "iTunes does not see the iPhone",
+    description:   "iTunes does not see the iPhone",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # -----------------
   # Errors in iTunes.
@@ -35489,6 +42184,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     42,
+    title:         "Errors in iTunes",
+    description:   "Errors in iTunes",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     42,
+    title:         "Errors in iTunes",
+    description:   "Errors in iTunes",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     42,
+    title:         "Errors in iTunes",
+    description:   "Errors in iTunes",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     42,
+    title:         "Errors in iTunes",
+    description:   "Errors in iTunes",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------
   # The phone is slowing down.
@@ -35795,6 +42538,54 @@ Defect.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     43,
+    title:         "The phone is slowing down",
+    description:   "The phone is slowing down",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     43,
+    title:         "The phone is slowing down",
+    description:   "The phone is slowing down",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     43,
+    title:         "The phone is slowing down",
+    description:   "The phone is slowing down",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    repair_id:     43,
+    title:         "The phone is slowing down",
+    description:   "The phone is slowing down",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------
   # The phone is slowing down.
@@ -36092,6 +42883,54 @@ Defect.create([
   {
     generation_id: 8,
     phone_id:      25,
+    repair_id:     44,
+    title:         "Connection to iTunes is required",
+    description:   "Connection to iTunes is required",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    repair_id:     44,
+    title:         "Connection to iTunes is required",
+    description:   "Connection to iTunes is required",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    repair_id:     44,
+    title:         "Connection to iTunes is required",
+    description:   "Connection to iTunes is required",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    repair_id:     44,
+    title:         "Connection to iTunes is required",
+    description:   "Connection to iTunes is required",
+    avatar:        '',
+    modules:       [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     repair_id:     44,
     title:         "Connection to iTunes is required",
     description:   "Connection to iTunes is required",
@@ -36101,6 +42940,11 @@ Defect.create([
     videos:        []
   }
 ])
+
+
+# --------------------------------------------------------------------
+# REPAIR
+# --------------------------------------------------------------------
 
 
 Repair.create([
@@ -36436,6 +43280,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     1,
+    title:         'Not working screen repair',
+    description:   'Repair for not working screen',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     1,
+    title:         'Not working screen repair',
+    description:   'Repair for not working screen',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     1,
+    title:         'Not working screen repair',
+    description:   'Repair for not working screen',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     1,
+    title:         'Not working screen repair',
+    description:   'Repair for not working screen',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # Broken screen repair
   # --------------------------------------------------------------------
@@ -36765,6 +43662,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     2,
+    title:         'Broken screen repair',
+    description:   'Repair for physical damage to screen',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     2,
+    title:         'Broken screen repair',
+    description:   'Repair for physical damage to screen',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     2,
+    title:         'Broken screen repair',
+    description:   'Repair for physical damage to screen',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     2,
+    title:         'Broken screen repair',
+    description:   'Repair for physical damage to screen',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # The screen flickers repair
@@ -37096,6 +44046,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     3,
+    title:         'The screen flickers repair',
+    description:   'The screen matrix defect repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     3,
+    title:         'The screen flickers repair',
+    description:   'The screen matrix defect repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     3,
+    title:         'The screen flickers repair',
+    description:   'The screen matrix defect repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     3,
+    title:         'The screen flickers repair',
+    description:   'The screen matrix defect repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # The screen is moving away repair
   # --------------------------------------------------------------------
@@ -37425,6 +44428,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     4,
+    title:         'The screen is moving away repair',
+    description:   'Physical damage to the display module repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     4,
+    title:         'The screen is moving away repair',
+    description:   'Physical damage to the display module repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     4,
+    title:         'The screen is moving away repair',
+    description:   'Physical damage to the display module repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     4,
+    title:         'The screen is moving away repair',
+    description:   'Physical damage to the display module repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # Screen with spots repair
@@ -37756,6 +44812,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     5,
+    title:         'Screen with spots repair',
+    description:   'There are spots on the screen',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     5,
+    title:         'Screen with spots repair',
+    description:   'There are spots on the screen',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     5,
+    title:         'Screen with spots repair',
+    description:   'There are spots on the screen',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     5,
+    title:         'Screen with spots repair',
+    description:   'There are spots on the screen',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # Screen is white / red / blue repair
   # --------------------------------------------------------------------
@@ -38085,6 +45194,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     6,
+    title:         'Screen is white / red / blue repair',
+    description:   'There are one color on the screen repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     6,
+    title:         'Screen is white / red / blue repair',
+    description:   'There are one color on the screen repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     6,
+    title:         'Screen is white / red / blue repair',
+    description:   'There are one color on the screen repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     6,
+    title:         'Screen is white / red / blue repair',
+    description:   'There are one color on the screen repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # The touchscreen is buggy repair
@@ -38416,6 +45578,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     7,
+    title:         'The touchscreen is buggy repair',
+    description:   'Slow reaction of touchscreen repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     7,
+    title:         'The touchscreen is buggy repair',
+    description:   'Slow reaction of touchscreen repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     7,
+    title:         'The touchscreen is buggy repair',
+    description:   'Slow reaction of touchscreen repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     7,
+    title:         'The touchscreen is buggy repair',
+    description:   'Slow reaction of touchscreen repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # The screen does not go off during a conversation repair
   # --------------------------------------------------------------------
@@ -38745,6 +45960,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     8,
+    title:         'The screen does not go off during a conversation repair',
+    description:   'Screen must go off automatically during conversation repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     8,
+    title:         'The screen does not go off during a conversation repair',
+    description:   'Screen must go off automatically during conversation repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     8,
+    title:         'The screen does not go off during a conversation repair',
+    description:   'Screen must go off automatically during conversation repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     8,
+    title:         'The screen does not go off during a conversation repair',
+    description:   'Screen must go off automatically during conversation repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'display' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # Touch ID doesn't work repair
@@ -39076,6 +46344,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     9,
+    title:         "Touch ID doesn't work repair",
+    description:   'Slow reaction of touchscreen repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     9,
+    title:         "Touch ID doesn't work repair",
+    description:   'Slow reaction of touchscreen repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     9,
+    title:         "Touch ID doesn't work repair",
+    description:   'Slow reaction of touchscreen repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     9,
+    title:         "Touch ID doesn't work repair",
+    description:   'Slow reaction of touchscreen repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # The vibro switch does not work repair
   # --------------------------------------------------------------------
@@ -39405,6 +46726,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     10,
+    title:         'The vibro switch does not work repair',
+    description:   'The vibration function is not turned on or off by switching from the switch button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     10,
+    title:         'The vibro switch does not work repair',
+    description:   'The vibration function is not turned on or off by switching from the switch button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     10,
+    title:         'The vibro switch does not work repair',
+    description:   'The vibration function is not turned on or off by switching from the switch button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     10,
+    title:         'The vibro switch does not work repair',
+    description:   'The vibration function is not turned on or off by switching from the switch button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # The volume buttons don't work repair
@@ -39736,6 +47110,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     11,
+    title:         "The volume buttons don't work repair",
+    description:   'The volume is not regulated by the volume control buttons repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     11,
+    title:         "The volume buttons don't work repair",
+    description:   'The volume is not regulated by the volume control buttons repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     11,
+    title:         "The volume buttons don't work repair",
+    description:   'The volume is not regulated by the volume control buttons repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     11,
+    title:         "The volume buttons don't work repair",
+    description:   'The volume is not regulated by the volume control buttons repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # The power button does not work repair
   # --------------------------------------------------------------------
@@ -40065,6 +47492,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     12,
+    title:         "The power button does not work repair",
+    description:   'The phone does not turn on with the power button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     12,
+    title:         "The power button does not work repair",
+    description:   'The phone does not turn on with the power button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     12,
+    title:         "The power button does not work repair",
+    description:   'The phone does not turn on with the power button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     12,
+    title:         "The power button does not work repair",
+    description:   'The phone does not turn on with the power button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # The Home button does not work repair
@@ -40396,6 +47876,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     13,
+    title:         "The Home button does not work repair",
+    description:   'No reaction during push Home button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     13,
+    title:         "The Home button does not work repair",
+    description:   'No reaction during push Home button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     13,
+    title:         "The Home button does not work repair",
+    description:   'No reaction during push Home button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     13,
+    title:         "The Home button does not work repair",
+    description:   'No reaction during push Home button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # The buttons don't work repair
   # --------------------------------------------------------------------
@@ -40725,6 +48258,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     14,
+    title:         "The buttons don't work repair",
+    description:   'No reaction during push any button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     14,
+    title:         "The buttons don't work repair",
+    description:   'No reaction during push any button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     14,
+    title:         "The buttons don't work repair",
+    description:   'No reaction during push any button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     14,
+    title:         "The buttons don't work repair",
+    description:   'No reaction during push any button repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'buttons' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # Water got in repair
@@ -41056,6 +48642,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     15,
+    title:         "Water got in repair",
+    description:   'Water got in phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     15,
+    title:         "Water got in repair",
+    description:   'Water got in phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     15,
+    title:         "Water got in repair",
+    description:   'Water got in phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     15,
+    title:         "Water got in repair",
+    description:   'Water got in phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # Warms up repair
   # --------------------------------------------------------------------
@@ -41385,6 +49024,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     16,
+    title:         "Warms up repair",
+    description:   'Phone is warms up to fast repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     16,
+    title:         "Warms up repair",
+    description:   'Phone is warms up to fast repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     16,
+    title:         "Warms up repair",
+    description:   'Phone is warms up to fast repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     16,
+    title:         "Warms up repair",
+    description:   'Phone is warms up to fast repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # Automatically rebooting repair
@@ -41716,6 +49408,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     17,
+    title:         "Automatically rebooting repair",
+    description:   'Phone is automatically rebooting again and agait repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     17,
+    title:         "Automatically rebooting repair",
+    description:   'Phone is automatically rebooting again and agait repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     17,
+    title:         "Automatically rebooting repair",
+    description:   'Phone is automatically rebooting again and agait repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     17,
+    title:         "Automatically rebooting repair",
+    description:   'Phone is automatically rebooting again and agait repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # Automatically turns off repair
   # --------------------------------------------------------------------
@@ -42045,6 +49790,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     18,
+    title:         "Automatically turns off repair",
+    description:   'Phone is automatically turns off again and agait repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     18,
+    title:         "Automatically turns off repair",
+    description:   'Phone is automatically turns off again and agait repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     18,
+    title:         "Automatically turns off repair",
+    description:   'Phone is automatically turns off again and agait repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     18,
+    title:         "Automatically turns off repair",
+    description:   'Phone is automatically turns off again and agait repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # Hung on the logo repair
@@ -42376,6 +50174,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     19,
+    title:         "Hung on the logo repair",
+    description:   'Phone is hung on the logo repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     19,
+    title:         "Hung on the logo repair",
+    description:   'Phone is hung on the logo repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     19,
+    title:         "Hung on the logo repair",
+    description:   'Phone is hung on the logo repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     19,
+    title:         "Hung on the logo repair",
+    description:   'Phone is hung on the logo repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # Not included repair
   # --------------------------------------------------------------------
@@ -42705,6 +50556,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     20,
+    title:         "Not included repair",
+    description:   'Phone not included repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     20,
+    title:         "Not included repair",
+    description:   'Phone not included repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     20,
+    title:         "Not included repair",
+    description:   'Phone not included repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     20,
+    title:         "Not included repair",
+    description:   'Phone not included repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'general' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # Headphones don't work repair
@@ -43036,6 +50940,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     21,
+    title:         "Headphones don't work repair",
+    description:   'There is no sound when headphones are connected repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     21,
+    title:         "Headphones don't work repair",
+    description:   'There is no sound when headphones are connected repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     21,
+    title:         "Headphones don't work repair",
+    description:   'There is no sound when headphones are connected repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     21,
+    title:         "Headphones don't work repair",
+    description:   'There is no sound when headphones are connected repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # The speaker does not work repair
   # --------------------------------------------------------------------
@@ -43365,6 +51322,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     22,
+    title:         "The speaker does not work repair",
+    description:   'No any sound repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     22,
+    title:         "The speaker does not work repair",
+    description:   'No any sound repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     22,
+    title:         "The speaker does not work repair",
+    description:   'No any sound repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     22,
+    title:         "The speaker does not work repair",
+    description:   'No any sound repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # Bad sound repair
@@ -43696,6 +51706,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     23,
+    title:         "Bad sound repair",
+    description:   'The sound is too quiet',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     23,
+    title:         "Bad sound repair",
+    description:   'The sound is too quiet',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     23,
+    title:         "Bad sound repair",
+    description:   'The sound is too quiet',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     23,
+    title:         "Bad sound repair",
+    description:   'The sound is too quiet',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # The microphone does not work repair
   # --------------------------------------------------------------------
@@ -44025,6 +52088,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     24,
+    title:         "The microphone does not work repair",
+    description:   'The microphone does not record audio repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     24,
+    title:         "The microphone does not work repair",
+    description:   'The microphone does not record audio repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     24,
+    title:         "The microphone does not work repair",
+    description:   'The microphone does not record audio repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     24,
+    title:         "The microphone does not work repair",
+    description:   'The microphone does not record audio repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # No sound repair
@@ -44356,6 +52472,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     25,
+    title:         "No sound repair",
+    description:   'The phone does not make any sounds repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     25,
+    title:         "No sound repair",
+    description:   'The phone does not make any sounds repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     25,
+    title:         "No sound repair",
+    description:   'The phone does not make any sounds repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     25,
+    title:         "No sound repair",
+    description:   'The phone does not make any sounds repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'sound' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # Case broken repair
   # --------------------------------------------------------------------
@@ -44685,6 +52854,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     26,
+    title:         "Case broken repair",
+    description:   'Physical damage to phone case repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     26,
+    title:         "Case broken repair",
+    description:   'Physical damage to phone case repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     26,
+    title:         "Case broken repair",
+    description:   'Physical damage to phone case repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     26,
+    title:         "Case broken repair",
+    description:   'Physical damage to phone case repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # Broken glass repair
@@ -45016,6 +53238,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     27,
+    title:         "Broken glass repair",
+    description:   'Physical damage to glass on phone case repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     27,
+    title:         "Broken glass repair",
+    description:   'Physical damage to glass on phone case repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     27,
+    title:         "Broken glass repair",
+    description:   'Physical damage to glass on phone case repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     27,
+    title:         "Broken glass repair",
+    description:   'Physical damage to glass on phone case repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # The screen is moving away repair
   # --------------------------------------------------------------------
@@ -45345,6 +53620,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     28,
+    title:         "The screen is moving away repair",
+    description:   'Physical damage to case and display module repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     28,
+    title:         "The screen is moving away repair",
+    description:   'Physical damage to case and display module repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     28,
+    title:         "The screen is moving away repair",
+    description:   'Physical damage to case and display module repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     28,
+    title:         "The screen is moving away repair",
+    description:   'Physical damage to case and display module repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # Broken display repair
@@ -45676,6 +54004,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     29,
+    title:         "Broken display repair",
+    description:   'Physical damage to case and display module repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     29,
+    title:         "Broken display repair",
+    description:   'Physical damage to case and display module repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     29,
+    title:         "Broken display repair",
+    description:   'Physical damage to case and display module repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     29,
+    title:         "Broken display repair",
+    description:   'Physical damage to case and display module repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # Don't work GPS repair
   # --------------------------------------------------------------------
@@ -46005,6 +54386,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     30,
+    title:         "Don't work GPS repair",
+    description:   'GPS not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     30,
+    title:         "Don't work GPS repair",
+    description:   'GPS not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     30,
+    title:         "Don't work GPS repair",
+    description:   'GPS not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     30,
+    title:         "Don't work GPS repair",
+    description:   'GPS not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # Do not work Blutooth repair
@@ -46336,6 +54770,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     31,
+    title:         "Do not work Blutooth repair",
+    description:   'Bluetooth not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     31,
+    title:         "Do not work Blutooth repair",
+    description:   'Bluetooth not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     31,
+    title:         "Do not work Blutooth repair",
+    description:   'Bluetooth not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     31,
+    title:         "Do not work Blutooth repair",
+    description:   'Bluetooth not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # The gyroscope does not work repair
   # --------------------------------------------------------------------
@@ -46665,6 +55152,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     32,
+    title:         "The gyroscope does not work repair",
+    description:   'Gyroscope not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     32,
+    title:         "The gyroscope does not work repair",
+    description:   'Gyroscope not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     32,
+    title:         "The gyroscope does not work repair",
+    description:   'Gyroscope not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     32,
+    title:         "The gyroscope does not work repair",
+    description:   'Gyroscope not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # Auto brightness does not work repair
@@ -46996,6 +55536,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     33,
+    title:         "Auto brightness does not work repair",
+    description:   'Brightness not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     33,
+    title:         "Auto brightness does not work repair",
+    description:   'Brightness not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     33,
+    title:         "Auto brightness does not work repair",
+    description:   'Brightness not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     33,
+    title:         "Auto brightness does not work repair",
+    description:   'Brightness not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # Vibration not work repair
   # --------------------------------------------------------------------
@@ -47325,6 +55918,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     34,
+    title:         "Vibration not work repair",
+    description:   'Vibration not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     34,
+    title:         "Vibration not work repair",
+    description:   'Vibration not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     34,
+    title:         "Vibration not work repair",
+    description:   'Vibration not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     34,
+    title:         "Vibration not work repair",
+    description:   'Vibration not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # Wi-Fi not work repair
@@ -47656,6 +56302,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     35,
+    title:         "Wi-Fi not work repair",
+    description:   'Wi-Fi not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     35,
+    title:         "Wi-Fi not work repair",
+    description:   'Wi-Fi not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     35,
+    title:         "Wi-Fi not work repair",
+    description:   'Wi-Fi not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     35,
+    title:         "Wi-Fi not work repair",
+    description:   'Wi-Fi not working on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'case' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # Modem mode does not work repair
   # --------------------------------------------------------------------
@@ -47985,6 +56684,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     36,
+    title:         "Modem mode does not work repair",
+    description:   'Modem mode does not work on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     36,
+    title:         "Modem mode does not work repair",
+    description:   'Modem mode does not work on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     36,
+    title:         "Modem mode does not work repair",
+    description:   'Modem mode does not work on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     36,
+    title:         "Modem mode does not work repair",
+    description:   'Modem mode does not work on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # The Internet does not work repair
@@ -48316,6 +57068,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     37,
+    title:         "The Internet does not work repair",
+    description:   'The Internet does not work on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     37,
+    title:         "The Internet does not work repair",
+    description:   'The Internet does not work on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     37,
+    title:         "The Internet does not work repair",
+    description:   'The Internet does not work on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     37,
+    title:         "The Internet does not work repair",
+    description:   'The Internet does not work on phone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # Does not see the SIM card repair
   # --------------------------------------------------------------------
@@ -48645,6 +57450,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     38,
+    title:         "Does not see the SIM card repair",
+    description:   'Phone does not see the SIM card repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     38,
+    title:         "Does not see the SIM card repair",
+    description:   'Phone does not see the SIM card repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     38,
+    title:         "Does not see the SIM card repair",
+    description:   'Phone does not see the SIM card repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     38,
+    title:         "Does not see the SIM card repair",
+    description:   'Phone does not see the SIM card repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # It catches the network poorly repair
@@ -48976,6 +57834,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     39,
+    title:         "It catches the network poorly repair",
+    description:   'Phone catches the network poorly repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     39,
+    title:         "It catches the network poorly repair",
+    description:   'Phone catches the network poorly repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     39,
+    title:         "It catches the network poorly repair",
+    description:   'Phone catches the network poorly repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     39,
+    title:         "It catches the network poorly repair",
+    description:   'Phone catches the network poorly repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # Does not catch the network repair
   # --------------------------------------------------------------------
@@ -49305,6 +58216,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     40,
+    title:         "Does not catch the network repair",
+    description:   'Phone does not catch the network repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     40,
+    title:         "Does not catch the network repair",
+    description:   'Phone does not catch the network repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     40,
+    title:         "Does not catch the network repair",
+    description:   'Phone does not catch the network repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     40,
+    title:         "Does not catch the network repair",
+    description:   'Phone does not catch the network repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # The Wi-Fi is not connected repair
@@ -49636,6 +58600,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     41,
+    title:         "The Wi-Fi is not connected repair",
+    description:   'Phone does not connected the Wi-Fi repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     41,
+    title:         "The Wi-Fi is not connected repair",
+    description:   'Phone does not connected the Wi-Fi repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     41,
+    title:         "The Wi-Fi is not connected repair",
+    description:   'Phone does not connected the Wi-Fi repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     41,
+    title:         "The Wi-Fi is not connected repair",
+    description:   'Phone does not connected the Wi-Fi repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'network' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # iTunes does not see the iPhone repair
   # --------------------------------------------------------------------
@@ -49965,6 +58982,59 @@ Repair.create([
     images:        [],
     videos:        []
   },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     42,
+    title:         "iTunes does not see the iPhone repair",
+    description:   'iTunes does not see the iPhone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     42,
+    title:         "iTunes does not see the iPhone repair",
+    description:   'iTunes does not see the iPhone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     42,
+    title:         "iTunes does not see the iPhone repair",
+    description:   'iTunes does not see the iPhone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     42,
+    title:         "iTunes does not see the iPhone repair",
+    description:   'iTunes does not see the iPhone repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
 
   # --------------------------------------------------------------------
   # Errors in iTunes repair
@@ -50296,6 +59366,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     43,
+    title:         "Errors in iTunes repair",
+    description:   'Errors in iTunes repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     43,
+    title:         "Errors in iTunes repair",
+    description:   'Errors in iTunes repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     43,
+    title:         "Errors in iTunes repair",
+    description:   'Errors in iTunes repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     43,
+    title:         "Errors in iTunes repair",
+    description:   'Errors in iTunes repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # The phone is slowing down repair
   # --------------------------------------------------------------------
@@ -50626,6 +59749,59 @@ Repair.create([
     videos:        []
   },
 
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     44,
+    title:         "The phone is slowing down repair",
+    description:   'The phone is slowing down repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     44,
+    title:         "The phone is slowing down repair",
+    description:   'The phone is slowing down repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     44,
+    title:         "The phone is slowing down repair",
+    description:   'The phone is slowing down repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
+    defect_id:     44,
+    title:         "The phone is slowing down repair",
+    description:   'The phone is slowing down repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+
   # --------------------------------------------------------------------
   # Connection to iTunes is required repair
   # --------------------------------------------------------------------
@@ -50943,8 +60119,61 @@ Repair.create([
     videos:        []
   },
 
-  { generation_id: 8,
+  {
+    generation_id: 8,
     phone_id:      25,
+    defect_id:     45,
+    title:         "Connection to iTunes is required repair",
+    description:   'Connection to iTunes is required repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      26,
+    defect_id:     45,
+    title:         "Connection to iTunes is required repair",
+    description:   'Connection to iTunes is required repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      27,
+    defect_id:     45,
+    title:         "Connection to iTunes is required repair",
+    description:   'Connection to iTunes is required repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      28,
+    defect_id:     45,
+    title:         "Connection to iTunes is required repair",
+    description:   'Connection to iTunes is required repair',
+    overview:      '',
+    avatar:        '',
+    spare_parts:   [ 'firmware' ],
+    images:        [],
+    videos:        []
+  },
+
+  {
+    generation_id: 9,
+    phone_id:      29,
     defect_id:     45,
     title:         "Connection to iTunes is required repair",
     description:   'Connection to iTunes is required repair',
@@ -50962,7 +60191,7 @@ Category.create([
   { heading: 'iPad',        overview: 'planshet',          display: true, avatar: '', images: [], videos: [] },
   { heading: 'iPod',        overview: 'audioplaer',        display: true, avatar: '', images: [], videos: [] },
   { heading: 'iMac',        overview: 'personal computer', display: true, avatar: '', images: [], videos: [] },
-  { heading: 'MavBook',     overview: 'noutbook',          display: true, avatar: '', images: [], videos: [] },
+  { heading: 'MacBook',     overview: 'noutbook',          display: true, avatar: '', images: [], videos: [] },
   { heading: 'Apple Watch', overview: 'smart watch',       display: true, avatar: '', images: [], videos: [] }
 ])
 
