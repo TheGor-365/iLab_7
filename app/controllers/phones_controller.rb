@@ -1,7 +1,8 @@
 class PhonesController < ApplicationController
 
   before_action :authenticate_user!
-  before_action :set_phone, only: %i[ show edit update destroy ]
+
+  before_action :set_phone,      only: %i[ show edit update destroy ]
 
   def index
     @phones = Phone.order('id ASC').all

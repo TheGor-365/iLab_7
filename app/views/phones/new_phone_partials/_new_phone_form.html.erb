@@ -31,14 +31,10 @@
           <%= form.label 'iPhone generation', class: 'display-6 mb-5 text-decoration-none text-muted', id: 'phone-generation' %><br>
         <% end %>
 
-        <div class="form-check">
-          <%= form.radio_button(:generation_id, '1', class: 'form-check-input') %>
-          <%= form.label :generation_1 %>
-        </div>
-
-        <div class="form-check">
-          <%= form.radio_button(:generation_id, '2', class: 'form-check-input') %>
-          <%= form.label :generation_2 %>
+        <div class="form-check form-switch">
+          <%= form.collection_radio_buttons(:generation_id, Generation.order(:title), :id, :title) do |generation| %>
+            <%= generation.label { generation.radio_button(class: 'form-check-input') + generation.text } %><br>
+          <% end %>
         </div>
       </div>
 
@@ -49,7 +45,12 @@
           <%= form.label :new_iPhone_model_title, id: 'phone-model-title', class: 'display-6 mb-5 text-decoration-none text-muted' %>
         <% end %>
 
-        <%= form.text_field :model_title, class: 'form-control' %>
+        <%= form.text_field :model_title, class: 'form-control mb-5' %>
+
+        <div class="row p-5 shadow bg-white mb-5">
+          <%= form.label :choose_phone_title, { class: 'mb-5' } %>
+          <%= form.select(:phone_id, options_from_collection_for_select(Phone.all, :id, :model_title, (phone.id if phone.present?)), {}, { class: 'form-control' }) %>
+        </div>
       </div>
 
 
@@ -69,9 +70,9 @@
             <%= form.label "Current iPhone avatar", class: 'form-label mb-3' %><br>
 
             <% if phone.avatar.present? %>
-              <%= image_tag(phone.avatar.url, width: '300', class: 'img-thumbnail rounded p-1 shadow') %>
+              <%= image_tag(phone.avatar.url, width: '300', height: '200', class: 'img-thumbnail rounded p-1 shadow') %>
             <% else %>
-              <%= image_tag('default_product_avatar.jpg', width: '300', class: 'img-thumbnail rounded p-1 shadow') %>
+              <%= image_tag('default_product_avatar.jpg', width: '300', height: '200', class: 'img-thumbnail rounded p-1 shadow') %>
             <% end %>
           </div>
 
@@ -95,11 +96,25 @@
         </div>
 
         <div class="mt-3 mb-3">
-          <% if phone.images? %>
-            <% phone.images.each do |image| %>
-              <%= image_tag(image.url, width: '100', class: 'rounded p-1 shadow') %>
+
+          <div class="mt-3 mb-3 col">
+            <%= form.label "Current iPhone images", class: 'form-label mb-3' %><br>
+
+            <% if phone.images.present? %>
+              <% phone.images.each do |phone_image| %>
+                <%= image_tag(phone_image.url, width: '300', height: '200', class: 'img-thumbnail rounded p-1 shadow') %>
+              <% end %>
+            <% else %>
+              <%= image_tag('default_product_avatar.jpg', width: '300', height: '200', class: 'img-thumbnail rounded p-1 shadow') %>
             <% end %>
-          <% end %>
+
+            <% if phone.images? %>
+              <% phone.images.each do |image| %>
+                <%= image_tag(image.url, width: '100', class: 'rounded p-1 shadow') %>
+              <% end %>
+            <% end %>
+          </div>
+
         </div>
 
         <div class="mt-3 mb-3 col">
