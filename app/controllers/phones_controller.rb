@@ -17,7 +17,7 @@ class PhonesController < ApplicationController
 
   def create
     @phone = Phone.new(phone_params)
-    @phone.user_id = current_user.id if user_signed_in?
+    @phone.user_ids = current_user.id if user_signed_in? 
 
     respond_to do |format|
       if @phone.save

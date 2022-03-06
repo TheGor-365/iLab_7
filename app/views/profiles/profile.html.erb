@@ -56,21 +56,36 @@
 
       <% if current_user.repairman? %>
         <div class="col p-5 shadow bg-white m-4">
-          <i class="fas fa-tools fa-5x"></i><br><br>
+          <i class="fas fa-tools fa-5x text-success"></i><br><br>
+          <small class="text-success">repairman</small>
+        </div>
+      <% else %>
+        <div class="col p-5 shadow bg-white m-4">
+          <i class="fas fa-tools fa-5x text-muted"></i><br><br>
           <small class="text-muted">repairman</small>
         </div>
       <% end %>
 
       <% if current_user.teacher? %>
         <div class="col p-5 shadow bg-white m-4">
-          <i class="fas fa-chalkboard-teacher fa-5x"></i><br><br>
+          <i class="fas fa-chalkboard-teacher fa-5x text-success"></i><br><br>
+          <small class="text-success">teacher</small>
+        </div>
+      <% else %>
+        <div class="col p-5 shadow bg-white m-4">
+          <i class="fas fa-chalkboard-teacher fa-5x text-muted"></i><br><br>
           <small class="text-muted">teacher</small>
         </div>
       <% end %>
 
       <% if current_user.student? %>
         <div class="col p-5 shadow bg-white m-4">
-          <i class="fas fa-user-graduate fa-5x"></i><br><br>
+          <i class="fas fa-user-graduate fa-5x text-success"></i><br><br>
+          <small class="text-success">student</small>
+        </div>
+      <% else %>
+        <div class="col p-5 shadow bg-white m-4">
+          <i class="fas fa-user-graduate fa-5x text-muted"></i><br><br>
           <small class="text-muted">student</small>
         </div>
       <% end %>
@@ -97,7 +112,7 @@
         <% @user.phones.each do |phone| %>
           <div class="row p-5 shadow bg-white mb-5">
             <%= phone.model_title %><br><br>
-            <%= phone.inspect %>
+            <%= image_tag(phone.avatar.url, width: '300', height: '200', class: 'img-thumbnail rounded p-1 shadow') if phone.avatar.present? %>
           </div>
         <% end %>
       <% end %>
@@ -115,8 +130,8 @@
 
         <% @user.makbooks.each do |makbook| %>
           <div class="row p-5 shadow bg-white mb-5">
-            <%= makbook.title %><br><br>
-            <%= makbook.inspect %>
+            <%= makbook.full_title %><br><br>
+            <%= image_tag(makbook.avatar.url, width: '300', height: '200', class: 'img-thumbnail rounded p-1 shadow') if makbook.avatar.present? %>
           </div>
         <% end %>
       <% end %>
@@ -134,8 +149,8 @@
 
         <% @user.imacs.each do |imac| %>
           <div class="row p-5 shadow bg-white mb-5">
-            <%= imac.title %><br><br>
-            <%= imac.inspect %>
+            <%= imac.full_title %><br><br>
+            <%= image_tag(imac.avatar.url, width: '300', height: '200', class: 'img-thumbnail rounded p-1 shadow') if imac.avatar.present? %>
           </div>
         <% end %>
       <% end %>
@@ -153,8 +168,8 @@
 
         <% @user.ipads.each do |ipad| %>
           <div class="row p-5 shadow bg-white mb-5">
-            <%= ipad.title %><br><br>
-            <%= ipad.inspect %>
+            <%= ipad.full_title %><br><br>
+            <%= image_tag(ipad.avatar.url, width: '300', height: '200', class: 'img-thumbnail rounded p-1 shadow') if ipad.avatar.present? %>
           </div>
         <% end %>
       <% end %>
@@ -172,8 +187,8 @@
 
         <% @user.airpods.each do |airpod| %>
           <div class="row p-5 shadow bg-white mb-5">
-            <%= airpod.title %><br><br>
-            <%= airpod.inspect %>
+            <%= airpod.full_title %><br><br>
+            <%= image_tag(airpod.avatar.url, width: '300', height: '200', class: 'img-thumbnail rounded p-1 shadow') if airpod.avatar.present? %>
           </div>
         <% end %>
       <% end %>
@@ -191,8 +206,8 @@
 
         <% @user.apple_watches.each do |apple_watch| %>
           <div class="row p-5 shadow bg-white mb-5">
-            <%= apple_watch.title %><br><br>
-            <%= apple_watch.inspect %>
+            <%= apple_watch.full_title %><br><br>
+            <%= image_tag(apple_watch.avatar.url, width: '300', height: '200', class: 'img-thumbnail rounded p-1 shadow') if apple_watch.avatar.present? %>
           </div>
         <% end %>
       <% end %>
@@ -201,7 +216,7 @@
 
       <% @user.all_gadgets.each do |gadget| %>
         <div class="row p-5 shadow bg-white mb-5">
-          <%= gadget.inspect %>
+          <%= gadget %>
         </div>
       <% end %>
     </div>

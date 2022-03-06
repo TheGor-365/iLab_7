@@ -6,9 +6,9 @@
   </p>
 
   <hr class="mb-5">
-  
+
   <div class="text-center">
-    <%= image_tag(@phone.avatar.url, width: '300', class: 'rounded img-thumbnail shadow') %>
+    <%= image_tag(@phone.avatar.url, width: '300', class: 'rounded img-thumbnail shadow') if @phone.avatar.present? %>
   </div>
 
   <hr class="mb-5">
