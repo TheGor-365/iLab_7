@@ -14,10 +14,10 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'pg'
 gem 'devise'
-gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
+# gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
 gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git'
-gem 'omniauth-facebook'
-gem 'omniauth-google-oauth2'
+# gem 'omniauth-facebook'
+# gem 'omniauth-google-oauth2'
 gem "omniauth-rails_csrf_protection"
 gem 'mini_magick'
 gem 'carrierwave'
@@ -32,6 +32,8 @@ gem 'mail'
 gem "actiontext"
 gem 'paperclip', '~> 6.1'
 gem 'paperclip-av-transcoder', '~> 0.6.4'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'carrierwave-yandex-disk', '~> 0.1.0'
 
 
 group :development, :test do
@@ -49,6 +51,7 @@ group :development do
   gem 'listen', '~> 3.3'
 end
 
+
 group :test do
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
@@ -56,5 +59,3 @@ group :test do
   gem 'rspec-rails'
   gem 'factory_bot'
 end
-
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

@@ -4,7 +4,8 @@ class VideosUploader < CarrierWave::Uploader::Base
 
   process encode_video: [:mp4, resolution: "640x480"]
 
-  storage :file
+  # storage :file
+  storage :yandex_disk
 
   def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
