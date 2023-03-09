@@ -14,22 +14,22 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'pg'
 gem 'devise'
 gem 'rails_admin'
-gem "omniauth-rails_csrf_protection"
+# gem "omniauth-rails_csrf_protection"
 gem 'mini_magick'
 gem 'carrierwave'
 gem "carrierwave-video"
 gem 'cancancan'
-gem 'activerecord-session_store'
-gem 'gmaps4rails'
-gem 'geocoder'
-gem 'sidekiq'
-gem 'mailcatcher'
-gem 'mail'
+# gem 'activerecord-session_store'
+# gem 'gmaps4rails'
+# gem 'geocoder'
+# gem 'sidekiq'
+# gem 'mailcatcher'
+# gem 'mail'
 gem "actiontext"
-gem 'paperclip', '~> 6.1'
-gem 'paperclip-av-transcoder', '~> 0.6.4'
+# gem 'paperclip', '~> 6.1'
+# gem 'paperclip-av-transcoder', '~> 0.6.4'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'carrierwave-yandex-disk', '~> 0.1.0'
+# gem 'carrierwave-yandex-disk', '~> 0.1.0'
 
 # gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
 # gem 'omniauth-facebook'
