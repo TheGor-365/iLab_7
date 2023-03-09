@@ -2,9 +2,89 @@ class GenerationsController < ApplicationController
 
   before_action :authenticate_user!
   before_action :set_generation, only: %i[ show edit update destroy ]
+  before_action :set_generations,
+  only: [
+    :index,
+    :generations_table,
+    :generations_block,
+    :generation_title,
+    :generation_features,
+    :generation_production_period,
+    :generation_vulnerability,
+    :edit_generation_title,
+    :edit_generation_avatar,
+    :edit_generation_production_period,
+    :edit_generation_vulnerability,
+    :change_generation_images,
+    :change_generation_videos
+  ]
 
-  def index
-    @generations = Generation.all
+  def index; end
+
+  def generations_table
+    respond_to do |format|
+      format.js { render partial: 'generations_table', generations: @generations }
+    end
+  end
+  def generations_block
+    respond_to do |format|
+      format.js { render partial: 'generations_block', generations: @generations }
+    end
+  end
+  def generation_title
+    respond_to do |format|
+      format.js { render partial: 'generation_title', generation: @generation }
+    end
+  end
+  def generation_features
+    respond_to do |format|
+      format.js { render partial: 'generation_features', generation: @generation }
+    end
+  end
+  def generation_production_period
+    respond_to do |format|
+      format.js { render partial: 'generation_production_period', generation: @generation }
+    end
+  end
+  def generation_vulnerability
+    respond_to do |format|
+      format.js { render partial: 'generation_vulnerability', generation: @generation }
+    end
+  end
+  def edit_generation_title
+    respond_to do |format|
+      format.js { render partial: 'edit_generation_title', generation: @generation }
+    end
+  end
+  def edit_generation_avatar
+    respond_to do |format|
+      format.js { render partial: 'edit_generation_avatar', generation: @generation }
+    end
+  end
+  def edit_generation_production_period
+    respond_to do |format|
+      format.js { render partial: 'edit_generation_production_period', generation: @generation }
+    end
+  end
+  def edit_generation_features
+    respond_to do |format|
+      format.js { render partial: 'edit_generation_features', generation: @generation }
+    end
+  end
+  def edit_generation_vulnerability
+    respond_to do |format|
+      format.js { render partial: 'edit_generation_vulnerability', generation: @generation }
+    end
+  end
+  def change_generation_images
+    respond_to do |format|
+      format.js { render partial: 'change_generation_images', generation: @generation }
+    end
+  end
+  def change_generation_videos
+    respond_to do |format|
+      format.js { render partial: 'change_generation_videos', generation: @generation }
+    end
   end
 
   def show; end
@@ -47,6 +127,10 @@ class GenerationsController < ApplicationController
 
   def set_generation
     @generation = Generation.find(params[:id])
+  end
+
+  def set_generations
+    @generations = Generation.order('id ASC').all
   end
 
   def generation_params

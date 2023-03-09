@@ -1,9 +1,29 @@
 Rails.application.routes.draw do
+
+  #--------------------------------------------------------------------------------------------
+  # RAILS ADMIN
+  #--------------------------------------------------------------------------------------------
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+
+
+  #--------------------------------------------------------------------------------------------
+  # DEVISE
+  #--------------------------------------------------------------------------------------------
 
   devise_for :users
 
+
+  #--------------------------------------------------------------------------------------------
+  # ROOT PATH
+  #--------------------------------------------------------------------------------------------
+
   root to: 'pages#home'
+
+
+  #--------------------------------------------------------------------------------------------
+  # CRUD
+  #--------------------------------------------------------------------------------------------
 
   resources :owned_gadgets do
     resources :images, only: [ :create, :destroy ]
@@ -102,7 +122,9 @@ Rails.application.routes.draw do
   end
 
 
+  #--------------------------------------------------------------------------------------------
   # USER CART
+  #--------------------------------------------------------------------------------------------
 
   delete 'cart', to: 'order_items#destroy_all'
   post   'cart', to: 'order_items#update_all'
@@ -110,25 +132,33 @@ Rails.application.routes.draw do
   match 'cart',  to: 'cart#show', via: [ :get, :post ]
 
 
+  #--------------------------------------------------------------------------------------------
   # STORE
+  #--------------------------------------------------------------------------------------------
 
   match 'store', to: 'pages#store', via: [ :get, :post ]
 
 
+  #--------------------------------------------------------------------------------------------
   # STATIC PAGES
+  #--------------------------------------------------------------------------------------------
 
   get 'terms',    to: 'pages#terms',    as: 'terms'
   get 'contacts', to: 'pages#contacts', as: 'contacts'
 
 
+  #--------------------------------------------------------------------------------------------
   # USER PROFILE
+  #--------------------------------------------------------------------------------------------
 
   get   'profiles/:username',              to: 'profiles#profile',      as: 'account'
   get   'profiles/:username/edit_profile', to: 'profiles#edit_profile', as: 'edit_account'
   patch 'profiles/:username',              to: 'profiles#update'
 
 
+  #--------------------------------------------------------------------------------------------
   # PHONES
+  #--------------------------------------------------------------------------------------------
 
   # phones index and show partials
 
@@ -137,10 +167,12 @@ Rails.application.routes.draw do
   get 'phones/phone_video/:id',    to: 'phones#phone_video',    as: 'phone_video'
   get 'phones/phone_overview/:id', to: 'phones#phone_overview', as: 'phone_overview'
 
+
   # phone index partials
 
   get 'phones_block', to: 'phones#phones_block', as: 'phones_block'
   get 'phones_table', to: 'phones#phones_table', as: 'phones_table'
+
 
   # phone edit partials
 
@@ -153,6 +185,7 @@ Rails.application.routes.draw do
   get 'edit_phone_model_overview/:id/edit', to: 'phones#edit_phone_model_overview', as: 'edit_phone_model_overview'
   get 'edit_phone_videos/:id/edit',         to: 'phones#edit_phone_videos',         as: 'edit_phone_videos'
 
+
   # phone new partials
 
   get 'phones/new_phone_generation/new',     to: 'phones#new_phone_generation',     as: 'new_phone_generation'
@@ -163,7 +196,56 @@ Rails.application.routes.draw do
   get 'phones/new_phone_videos/new',         to: 'phones#new_phone_videos',         as: 'new_phone_videos'
 
 
+  #--------------------------------------------------------------------------------------------
+  # GENERATIONS
+  #--------------------------------------------------------------------------------------------
+
+  # generations index and show partials
+
+  get 'generations/generation_title/:id',             to: 'generations#generation_title',             as: 'generation_title'
+  get 'generations/generation_production_period/:id', to: 'generations#generation_production_period', as: 'generation_production_period'
+  get 'generations/generation_features/:id',          to: 'generations#generation_features',          as: 'generation_features'
+  get 'generations/generation_vulnerability/:id',     to: 'generations#generation_vulnerability',     as: 'generation_vulnerability'
+  get 'generations/generation_image/:id',             to: 'generations#generation_image',             as: 'generation_photo'
+  get 'generations/generation_video/:id',             to: 'generations#generation_video',             as: 'generation_video'
+
+
+  # generation index partials
+
+  get 'generations_block', to: 'generations#generations_block', as: 'generations_block'
+  get 'generations_table', to: 'generations#generations_table', as: 'generations_table'
+
+
+  # generation edit partials
+
+  get 'edit_generation_title/:id/edit',                  to: 'generations#edit_generation_title',                  as: 'edit_generation_title'
+  get 'edit_generation_videos/:id/edit',                 to: 'generations#edit_generation_videos',                 as: 'edit_generation_videos'
+  get 'edit_generation_images/:id/edit',                 to: 'generations#edit_generation_images',                 as: 'edit_generation_images'
+  get 'edit_generation_avatar/:id/edit',                 to: 'generations#edit_generation_avatar',                 as: 'edit_generation_avatar'
+  get 'edit_generation_production_period/:id/edit',      to: 'generations#edit_generation_production_period',      as: 'edit_generation_production_period'
+  get 'edit_generation_vulnerability/:id/edit',          to: 'generations#edit_generation_vulnerability',          as: 'edit_generation_vulnerability'
+  get 'edit_generation_features/:id/edit',               to: 'generations#edit_generation_features',               as: 'edit_generation_features'
+  get 'add_more_generation_images/:id/edit',             to: 'generations#add_more_generation_images',             as: 'add_more_generation_images'
+  get 'add_more_generation_videos/:id/edit',             to: 'generations#add_more_generation_videos',             as: 'add_more_generation_videos'
+  get 'change_generation_images/:id/edit',               to: 'generations#change_generation_images',               as: 'change_generation_images'
+  get 'change_generation_videos/:id/edit',               to: 'generations#change_generation_videos',               as: 'change_generation_videos'
+  get 'delete_generation_images/:id/edit',               to: 'generations#delete_generation_images',               as: 'delete_generation_images'
+
+
+  # generation new partials
+
+  get 'generations/new_generation_title/new',              to: 'generations#new_generation_title',              as: 'new_generation_title'
+  get 'generations/new_generation_avatar/new',             to: 'generations#new_generation_avatar',             as: 'new_generation_avatar'
+  get 'generations/new_generation_images/new',             to: 'generations#new_generation_images',             as: 'new_generation_images'
+  get 'generations/new_generation_videos/new',             to: 'generations#new_generation_videos',             as: 'new_generation_videos'
+  get 'generations/new_generation_production_period/new',  to: 'generations#new_generation_production_period',  as: 'new_generation_production_period'
+  get 'generations/new_generation_features/new',           to: 'generations#new_generation_features',           as: 'new_generation_features'
+  get 'generations/new_generation_vulnerability/new',      to: 'generations#new_generation_vulnerability',      as: 'new_generation_vulnerability'
+
+
+  #--------------------------------------------------------------------------------------------
   # USER VIDEO RECORDING
+  #--------------------------------------------------------------------------------------------
 
   get 'video_recordings', to: 'video_recordings#new', as: 'video_recordings'
 end

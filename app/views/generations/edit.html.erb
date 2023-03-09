@@ -4,28 +4,33 @@
 <div class="row">
 
   <div class="col-2">
-    <%= render 'generation_show_nav' %>
+    <%= render 'generations/edit_generation_partials/edit_generation_show_nav' %>
   </div>
 
   <div class="col-6 m-5">
-    <div class="row p-5 shadow bg-white mb-5">
-      <h4 class="display-3 mb-5">
-        Editing Generation
-        <span class="text-muted">
-          <%= @generation.title %>
-        </span>
-      </h4>
-    </div>
 
-    <%= render 'form', generation: @generation %>
+    <div class="contents-block">
 
-    <div class="list-inline-item mt-3">
-      <%= link_to 'Show', @generation, class: 'text-decoration-none me-3' %>
-      <%= link_to 'Back', generations_path, class: 'text-decoration-none' %>
+      <div class="row px-0 pt-4 pb-4 shadow bg-white mb-5 text-center header-nav">
+        <div>
+          <h1 class="display-6">
+            Editing
+
+            <span class="anchorjs-link text-muted" id='gadget'>
+              <%= @generation.title %>
+            </span>
+            <br>
+
+            <i class="fas fa-edit text-muted pt-4"></i>
+          </h1>
+        </div>
+      </div>
+
+      <%= render 'generations/edit_generation_partials/edit_generation_form', generation: @generation %>
     </div>
   </div>
 
   <div class="col-3">
-    <%= render 'generation_info_card' %>
+    <%= render 'generations/edit_generation_partials/edit_generation_info_card' %>
   </div>
 </div>

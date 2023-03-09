@@ -4,16 +4,21 @@
 <div class="row">
 
   <div class="col-2">
-    <%= render 'generation_show_nav' %>
+    <%= render 'generations/show_generation_partials/generation_show_nav' %>
   </div>
 
-  <div class="col-6 m-5">
-    <div class="row p-5 mb-4 bg-white shadow">
-      <span id="knowlege_base" class="anchorjs-link display-4">Generation <%= @generation.title %>
-        <span class="text-muted display-4">
-          <strong>knowlege base</strong>
+  <div class="col-6 m-5 contents-show">
+
+    <div class="row pt-4 pb-5 shadow bg-white mb-5 text-center header-nav">
+      <p class="align-middle">
+        <span id="gadget" class="anchorjs-link display-6 text-muted"><%= @generation.title %>
+          <span class="text-muted display-6">
+            <strong>show room</strong>
+          </span>
         </span>
-      </span>
+      </p>
+
+      <i class="fas fa-2x fa-book-open text-muted pt-2"></i>
     </div>
 
     <div class="row mt-5 p-5 mb-4 bg-white shadow">
@@ -24,7 +29,12 @@
       </span>
       <br>
 
-      <%= @generation.production_period %>
+
+      <%= link_to generation_production_period_path(@generation), remote: true, class: 'text-decoration-none text-muted' do %>
+        <small>
+          <%= @generation.production_period %>
+        </small>
+      <% end %>
     </div>
 
     <div class="row mt-5 p-5 mb-4 bg-white shadow">
@@ -35,7 +45,11 @@
       </span>
       <br>
 
-      <%= @generation.features %>
+      <%= link_to generation_features_path(@generation), remote: true, class: 'text-decoration-none text-muted' do %>
+        <small>
+          <%= @generation.features %>
+        </small>
+      <% end %>
     </div>
 
     <div class="row mt-5 p-5 mb-4 bg-white shadow">
@@ -45,7 +59,12 @@
         </span>
       </span>
       <br>
-      <%= @generation.vulnerability %>
+
+      <%= link_to generation_vulnerability_path(@generation), remote: true, class: 'text-decoration-none text-muted' do %>
+        <small>
+          <%= @generation.vulnerability %>
+        </small>
+      <% end %>
     </div>
 
     <div class="row mt-5 p-5 mb-4 bg-white shadow">
@@ -56,10 +75,13 @@
       </span>
       <br>
 
-      <% @generation.images.each do |image| %>
-        <div class="col text-center mb-5">
-          <%= image_tag(image.url, width: '300', class: 'rounded img-thumbnail shadow') %>
-        </div>
+      <%= link_to generation_images_path(@generation), remote: true, class: 'text-decoration-none text-muted' do %>
+
+        <% @generation.images.each do |image| %>
+          <div class="col text-center mb-5">
+            <%= image_tag(image.url, width: '300', class: 'rounded img-thumbnail shadow') %>
+          </div>
+        <% end %>
       <% end %>
     </div>
 
@@ -71,10 +93,13 @@
       </span>
       <br>
 
-      <% @generation.videos.each do |video| %>
-        <small class="text-muted mb-5">
-          <%= video.identifier %>
-        </small>
+      <%= link_to generation_video_path(@generation), remote: true, class: 'text-decoration-none text-muted' do %>
+
+        <% @generation.videos.each do |video| %>
+          <small class="text-muted mb-5">
+            <%= video.identifier %>
+          </small>
+        <% end %>
       <% end %>
 
       <div class="col">
@@ -89,6 +114,6 @@
   </div>
 
   <div class="col-3">
-    <%= render 'generation_info_card' %>
+    <%= render 'generations/show_generation_partials/generation_info_card' %>
   </div>
 </div>

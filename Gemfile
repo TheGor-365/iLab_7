@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.0'
+ruby '3.1.2'
 
 gem "rails", "~> 7.0.2", ">= 7.0.2.2"
 gem 'puma', '~> 5.0'
@@ -11,13 +11,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'image_processing', '~> 1.2'
 gem 'bootsnap', '>= 1.4.4', require: false
-
 gem 'pg'
 gem 'devise'
-# gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
-gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git'
-# gem 'omniauth-facebook'
-# gem 'omniauth-google-oauth2'
+gem 'rails_admin'
 gem "omniauth-rails_csrf_protection"
 gem 'mini_magick'
 gem 'carrierwave'
@@ -35,6 +31,9 @@ gem 'paperclip-av-transcoder', '~> 0.6.4'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'carrierwave-yandex-disk', '~> 0.1.0'
 
+# gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
+# gem 'omniauth-facebook'
+# gem 'omniauth-google-oauth2'
 
 group :development, :test do
   gem 'shoulda-matchers'
