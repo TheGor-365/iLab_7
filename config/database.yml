@@ -16,4 +16,4 @@ test:
 
 production:
   <<: *default
-  database: ilab_production
+  url: <%= ENV['DATABASE_URL'] %>
