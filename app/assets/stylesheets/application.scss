@@ -1,257 +1,38 @@
 @import "./at.scss";
+@import 'daterangepicker/daterangepicker.css';
+@import "custom";
+@import 'bootstrap-icons/font/bootstrap-icons.css';
 
-.btn:focus, .btn:active {
-  outline: none !important;
-  box-shadow: none !important;
+.btn:focus,
+.btn:active {
+  outline: none;
+  box-shadow: none;
 }
 
-input[type=text] {
-  border-top: 0 !important;
-  border-left: 0 !important;
-  border-right: 0 !important;
-  box-shadow: none !important;
-  background: transparent !important;
-}
-
-input[type=email] {
-  border-top: 0 !important;
-  border-left: 0 !important;
-  border-right: 0 !important;
-  box-shadow: none !important;
-  background: transparent !important;
-}
-
-input[type=password] {
-  border-top: 0 !important;
-  border-left: 0 !important;
-  border-right: 0 !important;
-  box-shadow: none !important;
-  background: transparent !important;
-}
-
-input[type=password-confirmation] {
-  border-top: 0 !important;
-  border-left: 0 !important;
-  border-right: 0 !important;
-  box-shadow: none !important;
-  background: transparent !important;
-}
-
-select {
-  border-top: 0 !important;
-  border-left: 0 !important;
-  border-right: 0 !important;
-  box-shadow: none !important;
-  cursor: pointer;
-}
-
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
 textarea {
-  border-top: 0 !important;
-  border-left: 0 !important;
-  border-right: 0 !important;
-  box-shadow: none !important;
-  cursor: pointer;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+  background: transparent;
+  cursor: text;
 }
 
 #image-preview[src="#"] {
   display: none;
 }
 
-.fixed-left {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-.fixed-right {
-  position: fixed;
-  right: 40px;
-  z-index: 10;
-}
-
-.fixed-top {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  background: white !important;
-  opacity: 0.9;
-  z-index: 1030;
-}
-
-ul .dropdown-menu {
-  z-index: 1030;
-}
-
-.dropdown-menu {
-  border: none !important;
-}
-
-.row {
-  --bs-gutter-x: 0 !important;
-}
-
-button.accordion-button.collapsed {
-  padding-left: 0px !important;
-}
-
-button.accordion-button {
-  padding-left: 0px !important;
-}
-
-#product-count-field {
-  background-color: #f8f9fa;
-  cursor: pointer;
-  max-width: 120px;
-}
-
-.nav-scroll {
-  max-height: 800px;
-  min-height: 800px;
-  overflow-y: auto;
-}
-
-.contents-table {
-  width: 100%;
-  max-height: 800px;
-  overflow: auto;
-  top: 80px;
-}
-
-.contents-block {
-  width: 100%;
-  max-height: 790px;
-  overflow: auto;
-  top: 80px;
-}
-
-.contents-show {
-  width: 100%;
-  max-height: 800px;
-  overflow: auto;
-  top: 80px;
-}
-
-.table {
-  position: relative;
-}
-
-th {
-  position: sticky;
-  top: 80px;
-  background-color: #ffffff !important;
-  z-index: 1;
-  height: 50px;
-  opacity: 0.95;
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-}
-
-.btn-group-vertical.controls {
-  position: sticky;
-  top: 170px;
-  padding-top: 30px !important;
-  padding-bottom: 100px !important;
-}
-
-.title .h5 {
-  position: sticky;
-  top: 180px;
-  padding-top: 20px !important;
-  padding-bottom: 100px !important;
-}
-
-.images {
-  position: sticky;
-  top: 170px;
-  padding-top: 50px !important;
-  padding-bottom: 100px !important;
-}
-
-td.py-5.text-center {
-  padding-top: 80px !important;
-}
-
-td.py-5.text-center.title {
-  padding-top: 70px !important;
-}
-
-.videos {
-  position: sticky;
-  top: 170px;
-  padding-top: 50px !important;
-  padding-bottom: 100px !important;
-}
-
-.header-nav {
-  position: sticky;
-  top: 0;
-  z-index: 3;
-  opacity: 0.95;
-}
-
-.show-nav-header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  opacity: 0.95;
-}
-
-td.py-5.overview {
-  padding-top: 75px !important;
-  padding-bottom: 100px !important;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-.active-anchor:focus {
-  background-color: #363A3D;
-  color: white !important;
-}
-
-.anchor {
-  line-height: 50%;
-  display: inline-block;
-}
-
-.phone-content {
-  position: relative;
-}
-
-.block-controls {
-  position: sticky;
-  top: 220px;
-  padding-bottom: 100px;
-  opacity: 0.95;
-  z-index: 1 !important;
-}
-
-.begin {
-  position: absolute;
-  padding-bottom: 50px;
-  width: auto;
+.accordion-button {
+  padding-left: 0;
 }
 
 .success-button {
   position: fixed;
-  bottom: 0px;
-  margin-bottom: 40px;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1050;
 }
-
-.btn-success-custom {
-  opacity: 0.8;
-  border: 1px solid #ddd !important;
-  border: none;
-}
-
-.btn-success-custom:hover {
-  background: #287348 !important;
-  border: 1px solid #ddd !important;
-}
-
-// .home-page {
-//   background-color: black;
-// }

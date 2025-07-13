@@ -7,7 +7,16 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
-  def show; end
+  def show
+    # 1. Находим продукт по ID из запроса
+    @product = Product.find(params[:id])
+
+    # 2. Говорим контроллеру, как отвечать на разные типы запросов
+    respond_to do |format|
+      format.html # Отвечает на обычный запрос, рендеря show.html.erb (у нас его может и не быть)
+      format.js   # Отвечает на наш AJAX-запрос, рендеря show.js.erb (это то, что нам нужно!)
+    end
+  end
   def edit; end
 
   def new

@@ -1,8 +1,25 @@
-<div class="fixed-right shadow bg-white p-4 pe-3 col-3 m-3 mt-5">
-  <h5 class="text-center">
-    Category <span class="text-muted"> <%= @product.name %></span> photo
-  </h5>
-  <br>
+<%# Этот партиал принимает локальную переменную `product` %>
 
-  <%= image_tag(@product.avatar.url, width: '420') if @product.avatar.present? %>
+<%# Отображаем аватар, если он есть %>
+<% if product.avatar.present? %>
+  <%= image_tag product.avatar.url, class: "img-fluid rounded shadow-sm mb-3" %>
+<% end %>
+
+<%# Название товара %>
+<h5 class="card-title word-break mb-2"><%= product.name %></h5>
+
+<%# Цена %>
+<p class="fs-4 fw-bold text-success mb-3">$<%= product.price %></p>
+
+<%# Описание %>
+<p class="text-muted small"><%= product.description %></p>
+
+<%# Кнопки действий %>
+<div class="d-grid gap-2 mt-4">
+  <%= form_with model: @order_item, url: order_items_path do |f| %>
+    <%= f.hidden_field :product_id, value: product.id %>
+    <%= f.hidden_field :quantity, value: 1 %>
+    <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+  <% end %>
+  <a href="#" class="btn btn-outline-secondary">Add to Wishlist</a>
 </div>
