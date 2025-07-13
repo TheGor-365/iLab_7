@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.1.2'
+ruby '3.3.0'
 
-gem "rails", "~> 7.0.2", ">= 7.0.2.2"
-gem 'puma', '~> 5.0'
+gem 'rails', '~> 7.1.3'
+gem 'puma', '>= 6.0'
 gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
@@ -13,6 +13,7 @@ gem 'image_processing', '~> 1.2'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'pg'
 gem 'devise'
+gem 'turbo-rails'
 # gem 'rails_admin'
 # gem "omniauth-rails_csrf_protection"
 gem 'mini_magick'

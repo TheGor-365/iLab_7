@@ -8,16 +8,23 @@ class ProductsController < ApplicationController
   end
 
   def show
-    # 1. Находим продукт по ID из запроса
     @product = Product.find(params[:id])
 
-    # 2. Говорим контроллеру, как отвечать на разные типы запросов
     respond_to do |format|
-      format.html # Отвечает на обычный запрос, рендеря show.html.erb (у нас его может и не быть)
-      format.js   # Отвечает на наш AJAX-запрос, рендеря show.js.erb (это то, что нам нужно!)
+      format.html
+      format.js
     end
   end
+
   def edit; end
+
+  def description
+    @product = Product.find(params[:id])
+    respond_to do |format|
+      format.html { render partial: 'products/show_product_partials/product_description_show', locals: { product: @product } }
+      format.turbo_stream
+    end
+  end
 
   def new
     @product = Product.new

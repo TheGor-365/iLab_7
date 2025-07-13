@@ -1,20 +1,11 @@
-<%# Этот партиал принимает локальную переменную `product` %>
-
-<%# Отображаем аватар, если он есть %>
 <% if product.avatar.present? %>
   <%= image_tag product.avatar.url, class: "img-fluid rounded shadow-sm mb-3" %>
 <% end %>
 
-<%# Название товара %>
 <h5 class="card-title word-break mb-2"><%= product.name %></h5>
-
-<%# Цена %>
 <p class="fs-4 fw-bold text-success mb-3">$<%= product.price %></p>
-
-<%# Описание %>
 <p class="text-muted small"><%= product.description %></p>
 
-<%# Кнопки действий %>
 <div class="d-grid gap-2 mt-4">
   <%= form_with model: @order_item, url: order_items_path do |f| %>
     <%= f.hidden_field :product_id, value: product.id %>

@@ -6,26 +6,20 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%# Bootstrap is loaded via asset pipeline (Gemfile -> application.scss/js), so CDN links are correctly commented out. %>
-    <%# This is the correct way. %>
-
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
-    <%# We will manage JS packages via yarn, so we will remove CDN links below %>
-    <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
+    <%= javascript_pack_tag "application", "data-turbo-track": "reload" %>
 
   </head>
 
-  <body class="d-flex flex-column vh-100"> <%# We make body a flex container to push footer down %>
+  <body class="d-flex flex-column vh-100">
 
-    <header class="bg-white shadow-sm"> <%# Added shadow for better visual separation %>
+    <header class="bg-white shadow-sm">
       <%= toastr_flash %>
       <%= yield :nav %>
     </header>
 
-    <%# Main content area %>
     <main class="flex-shrink-0">
-      <div class="container py-4 my-4"> <%# Added a container and padding (py-4) %>
-        <%# Flash messages now also inside the main container %>
+      <div class="container py-4 my-4">
         <% if notice.present? %>
           <div class="alert alert-success">
             <%= notice %>
@@ -42,7 +36,6 @@
       </div>
     </main>
 
-    <%# Example of a sticky footer we might add later %>
     <footer class="footer mt-auto py-3 bg-light">
       <div class="container">
         <span class="text-muted">© <%= Time.now.year %> iLab. All rights reserved.</span>

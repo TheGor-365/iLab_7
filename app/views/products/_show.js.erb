@@ -1,6 +1,0 @@
-// 1. Находим наш контейнер в правом сайдбаре по его ID
-const sidebarContent = document.getElementById('current_product_info');
-
-// 2. Заменяем его содержимое на HTML, который мы рендерим из партиала
-//    Функция j() (или escape_javascript) защищает нас от ошибок в JS.
-sidebarContent.innerHTML = "<%= j render(partial: 'products/product_info_card', locals: { product: @product }) %>";

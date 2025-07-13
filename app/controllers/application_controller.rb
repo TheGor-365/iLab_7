@@ -11,7 +11,6 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-
     devise_parameter_sanitizer.permit :sign_up, keys: [
       :login,
       :username,
@@ -100,5 +99,15 @@ class ApplicationController < ActionController::Base
 
   def set_categories
     @categories = Category.all
+  end
+end
+
+class ApplicationController < ActionController::Base
+  rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
+
+  private
+
+  def record_not_found
+    render plain: "Product not found", status: 404
   end
 end
