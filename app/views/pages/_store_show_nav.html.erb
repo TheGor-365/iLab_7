@@ -1,4 +1,4 @@
-<div class="list-group list-group-flush">
+<div class="list-group list-group-flush bg-white">
   <% @products_by_category.keys.sort_by(&:heading).each do |category| %>
     <a href="#category-<%= category.id %>" class="list-group-item list-group-item-action word-break store-nav-link">
       <%= category.heading %>

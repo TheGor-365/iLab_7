@@ -35,9 +35,6 @@ Rails.application.routes.draw do
 
   resources :products do
     resources :images, only: [ :create, :destroy ]
-    member do
-      get :description
-    end
   end
 
   resources :universities do

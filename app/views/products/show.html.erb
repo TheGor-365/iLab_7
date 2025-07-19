@@ -81,3 +81,7 @@
     <%= render 'product_info_card', product: @product %>
   </div>
 </div>
+
+<%= turbo_frame_tag "product_description" do %>
+  <%= render 'products/show_product_partials/product_description_show', product: @product %>
+<% end %>

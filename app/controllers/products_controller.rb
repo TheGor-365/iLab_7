@@ -8,23 +8,9 @@ class ProductsController < ApplicationController
   end
 
   def show
-    @product = Product.find(params[:id])
-
-    respond_to do |format|
-      format.html
-      format.js
-    end
   end
 
   def edit; end
-
-  def description
-    @product = Product.find(params[:id])
-    respond_to do |format|
-      format.html { render partial: 'products/show_product_partials/product_description_show', locals: { product: @product } }
-      format.turbo_stream
-    end
-  end
 
   def new
     @product = Product.new

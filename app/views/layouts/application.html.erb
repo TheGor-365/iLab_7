@@ -19,7 +19,7 @@
     </header>
 
     <main class="flex-shrink-0">
-      <div class="container py-4 my-4">
+      <div class="container">
         <% if notice.present? %>
           <div class="alert alert-success">
             <%= notice %>
@@ -35,12 +35,5 @@
         <%= yield %>
       </div>
     </main>
-
-    <footer class="footer mt-auto py-3 bg-light">
-      <div class="container">
-        <span class="text-muted">© <%= Time.now.year %> iLab. All rights reserved.</span>
-      </div>
-    </footer>
-
   </body>
 </html>
